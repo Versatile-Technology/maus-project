@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MAU'S GLOBAL | Template Gallery</title>
-<meta name="description" content="Choose from 10 redesigned homepage templates for MAU'S GLOBAL.">
+<meta name="description" content="Choose from 8 redesigned homepage templates for MAU'S GLOBAL.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#0F172A">
 <link rel="icon" href="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png">
@@ -41,7 +41,7 @@ tailwind.config = { theme: { extend: {
 <main>
   <section class="mx-auto max-w-7xl px-4 pb-6 pt-12 sm:px-6 sm:pt-16 lg:px-8">
     <h1 class="max-w-3xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">Choose your homepage design</h1>
-    <p class="mt-4 max-w-2xl text-lg text-mut">Same MAU'S GLOBAL content, ten different looks. Preview a design, then open it full page. Everything is responsive and ready for mobile.</p>
+    <p class="mt-4 max-w-2xl text-lg text-mut">Same MAU'S GLOBAL content, eight different looks. Preview a design, then open it full page. Everything is responsive and ready for mobile.</p>
     <div class="mt-6 flex flex-wrap items-center gap-3" role="group" aria-label="Filter templates">
       <button type="button" data-filter="all" class="filter rounded-full bg-ink px-4 py-2 text-sm font-bold text-white">All</button>
       <button type="button" data-filter="light" class="filter rounded-full bg-white px-4 py-2 text-sm font-bold text-ink ring-1 ring-line hover:ring-ink">Light</button>
@@ -59,6 +59,9 @@ tailwind.config = { theme: { extend: {
         <li><a class="underline" href="template-3-plum-coral.html">3 – Plum &amp; Coral</a></li>
         <li><a class="underline" href="template-4-midnight-teal.html">4 – Midnight Teal</a></li>
         <li><a class="underline" href="template-5-sky-berry.html">5 – Sky &amp; Berry</a></li>
+        <li><a class="underline" href="template-6-teal-slate.html">6 – Teal Slate</a></li>
+        <li><a class="underline" href="template-7-slate-amber.html">7 – Slate &amp; Amber</a></li>
+        <li><a class="underline" href="template-8-blue-orange.html">8 – Blue &amp; Orange</a></li>
       </ul>
     </noscript>
   </section>
@@ -77,11 +80,9 @@ const TEMPLATES = [
   { n: 3,  name: "Plum & Coral",     file: "template-3-plum-coral.html",     mode: "light", layout: "Rounded cards, arch-shaped hero image",    colors: ["#5B1A7A", "#FF6B57", "#FFF1F3"] },
   { n: 4,  name: "Midnight Teal",    file: "template-4-midnight-teal.html",  mode: "dark",  layout: "Left sidebar, bento grid, price rows",     colors: ["#0A0F1C", "#2DD4BF", "#FBBF24"] },
   { n: 5,  name: "Sky & Berry",      file: "template-5-sky-berry.html",      mode: "light", layout: "Floating nav, zig-zag services, stepper",  colors: ["#C4175F", "#2AA9E0", "#0F1F4D"] },
-  { n: 6,  name: "Teal Slate",       file: "templete-6.html",     mode: "light", layout: "Light sidebar drawer, compact cards",      colors: ["#0D9488", "#F59E0B", "#F8FAFC"] },
-  { n: 7,  name: "Template 7",  file: null, mode: "light", layout: "", colors: [] },
-  { n: 8,  name: "Template 8",  file: null, mode: "light", layout: "", colors: [] },
-  { n: 9,  name: "Template 9",  file: null, mode: "light", layout: "", colors: [] },
-  { n: 10, name: "Template 10", file: null, mode: "light", layout: "", colors: [] }
+  { n: 6,  name: "Teal Slate",       file: "template-6.html",     mode: "light", layout: "Light sidebar drawer, compact cards",      colors: ["#0D9488", "#F59E0B", "#F8FAFC"] },
+  { n: 7,  name: "Slate & Amber",    file: "template-7.html",    mode: "dark",  layout: "Dark sidebar and hero, light content",     colors: ["#0F172A", "#F59E0B", "#F1F5F9"] },
+  { n: 8,  name: "Blue & Orange",    file: "template-8.html",    mode: "light", layout: "Top nav, feature list, hover service tiles", colors: ["#1E3A8A", "#9A3412", "#EFF6FF"] }
 ];
 
 const grid = document.getElementById('grid'), count = document.getElementById('count');
