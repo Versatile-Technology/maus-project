@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAU'S GLOBAL | Government Certificates & Business Services</title>
+    <meta name="description" content="MAU'S GLOBAL provides assistance with government certificates, education schemes, business registration, IT solutions, marketing and graphic designing in Maharashtra.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" crossorigin="anonymous">
+    <style>
+        html { 
+            scroll-behavior: smooth; 
+        }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        /* Marquee Ticker Animation */
+        .ticker { 
+            overflow: hidden; 
+            white-space: nowrap; 
+        }
+        .ticker-content { 
+            display: inline-block; 
+            animation: ticker 25s linear infinite; 
+        }
+        @keyframes ticker {
+            from { 
+                transform: translateX(0); 
+            }
+            to { 
+                transform: translateX(-50%); 
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-700 flex flex-col lg:flex-row min-h-screen antialiased selection:bg-slate-800 selection:text-white">
+
+    <header class="lg:hidden bg-slate-900 border-b border-slate-800 px-4 py-3 flex items-center justify-between sticky top-0 z-40 shadow-md">
+       <a href="#home" class="flex items-center gap-2">
+            <img src="images/logo.png" alt="MAU'S GLOBAL" class="w-36 max-h-10 object-contain">
+        </a>
+        <button id="menu-toggle-btn" aria-label="Open Mobile Menu" class="p-2 text-slate-300 hover:text-amber-400 focus:outline-none transition-colors">
+            <i class="ri-menu-line text-2xl"></i>
+        </button>
+    </header>
+    <div id="mobile-overlay" class="fixed inset-0 bg-slate-950/70 z-50 hidden opacity-0 transition-opacity duration-300 backdrop-blur-sm lg:hidden"></div>
+
+    <aside id="sidebar-drawer" class="w-72 lg:w-64 bg-slate-900 text-slate-200 border-r border-slate-800 fixed top-0 bottom-0 left-0 z-50 flex flex-col justify-between p-5 lg:p-6 transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out shadow-2xl lg:shadow-none">
+        <div>
+            <div class="flex items-center justify-between mb-8 lg:mb-10">
+               <a href="#home" class="flex items-center gap-2">
+					<img src="images/logo.png" alt="MAU'S GLOBAL" class="w-36 max-h-10 object-contain">
+				</a>
+                <button id="menu-close-btn" aria-label="Close Mobile Menu" class="lg:hidden p-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800 transition-colors">
+                    <i class="ri-close-line text-2xl"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col gap-1.5 text-sm font-medium">
+                
+                <a href="#home" class="nav-link group relative flex items-center gap-3 px-3.5 py-3 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/90 transition-all duration-200">
+                    <div class="w-2 h-2 rounded-full bg-amber-400 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <i class="ri-home-4-line text-lg text-slate-400 group-hover:text-amber-400 group-hover:scale-110 transition-all"></i> 
+                    <span>Home</span>
+                </a>
+
+                <a href="#services" class="nav-link group relative flex items-center gap-3 px-3.5 py-3 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/90 transition-all duration-200">
+                    <div class="w-2 h-2 rounded-full bg-amber-400 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <i class="ri-service-line text-lg text-slate-400 group-hover:text-amber-400 group-hover:scale-110 transition-all"></i> 
+                    <span>Services</span>
+                </a>
+
+                <a href="#plans" class="nav-link group relative flex items-center gap-3 px-3.5 py-3 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/90 transition-all duration-200">
+                    <div class="w-2 h-2 rounded-full bg-amber-400 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <i class="ri-price-tag-3-line text-lg text-slate-400 group-hover:text-amber-400 group-hover:scale-110 transition-all"></i> 
+                    <span>Plans & Pricing</span>
+                </a>
+
+                <a href="#how" class="nav-link group relative flex items-center gap-3 px-3.5 py-3 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/90 transition-all duration-200">
+                    <div class="w-2 h-2 rounded-full bg-amber-400 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <i class="ri-node-tree text-lg text-slate-400 group-hover:text-amber-400 group-hover:scale-110 transition-all"></i> 
+                    <span>How It Works</span>
+                </a>
+
+                <a href="#contact" class="nav-link group relative flex items-center gap-3 px-3.5 py-3 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/90 transition-all duration-200">
+                    <div class="w-2 h-2 rounded-full bg-amber-400 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <i class="ri-contacts-line text-lg text-slate-400 group-hover:text-amber-400 group-hover:scale-110 transition-all"></i> 
+                    <span>Contact Us</span>
+                </a>
+
+            </nav>
+        </div>
+        <div class="pt-6 border-t border-slate-800">
+            <div class="p-3.5 rounded-2xl bg-slate-800/60 border border-slate-700/50 hover:border-amber-500/40 transition-colors">
+                <a href="#contact" class="nav-link group block w-full text-center bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-xs py-2.5 rounded-xl shadow-md transition-all transform active:scale-95">
+                    <span class="inline-flex items-center gap-1.5">
+                        <i class="ri-user-shared-line text-sm group-hover:translate-x-0.5 transition-transform"></i>
+                        Login / Sign Up
+                    </span>
+                </a>
+                <p class="text-[11px] text-center text-slate-400 mt-2.5 flex items-center justify-center gap-1">
+                    <i class="ri-phone-line text-amber-400"></i> +91 9119480496
+                </p>
+            </div>
+        </div>
+    </aside>
+    <div class="flex-1 lg:ml-64 flex flex-col min-w-0">
+        <div class="bg-amber-100/80 border-b border-amber-200/90 py-2.5 text-xs font-semibold text-slate-800 ticker shadow-inner">
+            <div class="ticker-content">
+                <span class="mx-8 inline-flex items-center gap-1.5"><i class="ri-notification-3-line text-amber-700"></i> आंबेडकर शिक्षणवृत्ती योजना - मागासवर्गीय विद्यार्थ्यांसाठी आर्थिक मदत</span>
+                <span class="mx-8 inline-flex items-center gap-1.5 text-amber-900"><i class="ri-sparkles-line text-amber-600"></i> प्रधानमंत्री रोजगार निर्मिती कार्यक्रम</span>
+                <span class="mx-8 inline-flex items-center gap-1.5"><i class="ri-notification-3-line text-amber-700"></i> आंबेडकर शिक्षणवृत्ती योजना - मागासवर्गीय विद्यार्थ्यांसाठी आर्थिक मदत</span>
+                <span class="mx-8 inline-flex items-center gap-1.5 text-amber-900"><i class="ri-sparkles-line text-amber-600"></i> प्रधानमंत्री रोजगार निर्मिती कार्यक्रम</span>
+            </div>
+        </div>
+        <main id="main-content" class="p-4 sm:p-6 md:p-8 lg:p-12 space-y-12 sm:space-y-16 lg:space-y-20 max-w-7xl">
+
+            <section id="home" class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white rounded-3xl p-6 sm:p-10 lg:p-14 border border-slate-700/80 shadow-xl">
+                <div class="absolute -right-10 -bottom-10 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute right-1/3 -top-10 w-60 h-60 bg-rose-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="relative z-10 max-w-2xl">
+                    <span class="text-[11px] font-bold tracking-widest text-amber-400 uppercase bg-amber-500/10 border border-amber-500/20 px-3.5 py-1.5 rounded-full inline-block">
+                        Trusted Verification Partner
+                    </span>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mt-5 leading-tight tracking-tight">
+                        Government Certificates <br class="hidden sm:inline"><span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-rose-400">Made Fast & Hassle-Free</span>
+                    </h1>
+                    <p class="text-sm sm:text-base text-slate-300 mt-4 leading-relaxed font-normal">
+                        Empowering citizens and businesses in Maharashtra with reliable application processing for certificates, education subsidies, and official state schemes.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mt-8">
+                        <a href="#services" class="group text-center bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold px-7 py-3.5 rounded-xl transition-all shadow-lg shadow-amber-950/30 active:scale-95 flex items-center justify-center gap-2">
+                            <span>Explore Services</span>
+                            <i class="ri-arrow-right-line group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="#contact" class="text-center bg-slate-800/80 hover:bg-slate-800 text-slate-200 border border-slate-600/80 px-7 py-3.5 rounded-xl font-semibold transition-all hover:text-white">
+                            Contact Support
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="space-y-6 sm:space-y-8">
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-slate-200/80 pb-4">
+                    <div>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Our Core Services</h2>
+                        <p class="text-slate-500 text-xs sm:text-sm mt-1">End-to-end support for business setups, digital design, and document compliance.</p>
+                    </div>
+                    <span class="text-xs font-bold text-amber-800 bg-amber-100/90 px-3 py-1 rounded-lg w-max">4 Key Verticals</span>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div class="group bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-800 group-hover:bg-slate-900 group-hover:text-amber-400 flex items-center justify-center text-xl font-bold transition-all duration-300 mb-5">
+                                <i class="ri-computer-line"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-lg group-hover:text-slate-900 transition-colors">IT Solutions</h3>
+                            <p class="text-xs text-slate-500 mt-2.5 leading-relaxed">Software deployment, system management, cybersecurity setup, and network infrastructure.</p>
+                        </div>
+                        <span class="inline-flex items-center gap-1 text-xs font-semibold text-amber-700 group-hover:text-amber-800 mt-6">
+                            Learn More <i class="ri-arrow-right-s-line group-hover:translate-x-1 transition-transform"></i>
+                        </span>
+                    </div>
+                    <div class="group bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-700 group-hover:bg-amber-600 group-hover:text-white flex items-center justify-center text-xl font-bold transition-all duration-300 mb-5">
+                                <i class="ri-file-text-line"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-lg group-hover:text-slate-900 transition-colors">Registration & Licences</h3>
+                            <p class="text-xs text-slate-500 mt-2.5 leading-relaxed">Assistance with GST, 12A, 80G, DSC tokens, trade licences, and legal documentation.</p>
+                        </div>
+                        <span class="inline-flex items-center gap-1 text-xs font-semibold text-amber-700 group-hover:text-amber-800 mt-6">
+                            Learn More <i class="ri-arrow-right-s-line group-hover:translate-x-1 transition-transform"></i>
+                        </span>
+                    </div>
+                    <div class="group bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-rose-50 text-rose-700 group-hover:bg-rose-600 group-hover:text-white flex items-center justify-center text-xl font-bold transition-all duration-300 mb-5">
+                                <i class="ri-megaphone-line"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-lg group-hover:text-slate-900 transition-colors">Marketing Services</h3>
+                            <p class="text-xs text-slate-500 mt-2.5 leading-relaxed">Brand promotion campaigns, digital marketing strategies, and target audience engagement.</p>
+                        </div>
+                        <span class="inline-flex items-center gap-1 text-xs font-semibold text-amber-700 group-hover:text-amber-800 mt-6">
+                            Learn More <i class="ri-arrow-right-s-line group-hover:translate-x-1 transition-transform"></i>
+                        </span>
+                    </div>
+                    <div class="group bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-700 group-hover:bg-indigo-600 group-hover:text-white flex items-center justify-center text-xl font-bold transition-all duration-300 mb-5">
+                                <i class="ri-palette-line"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-lg group-hover:text-slate-900 transition-colors">Graphic Designing</h3>
+                            <p class="text-xs text-slate-500 mt-2.5 leading-relaxed">Custom artwork, logo identity design, brochures, and visual content production.</p>
+                        </div>
+                        <span class="inline-flex items-center gap-1 text-xs font-semibold text-amber-700 group-hover:text-amber-800 mt-6">
+                            Learn More <i class="ri-arrow-right-s-line group-hover:translate-x-1 transition-transform"></i>
+                        </span>
+                    </div>
+
+                </div>
+            </section>
+            <section id="plans" class="space-y-6 sm:space-y-8">
+                <div class="border-b border-slate-200/80 pb-4">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Pricing & Packages</h2>
+                    <p class="text-slate-500 text-xs sm:text-sm mt-1">Select from yearly membership tiers designed for distinct assistance needs.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-extrabold text-slate-500 uppercase tracking-widest">Silver</span>
+                                <i class="ri-medal-line text-lg text-slate-400"></i>
+                            </div>
+                            <div class="text-3xl font-extrabold text-slate-900 mt-3">₹5,500 <span class="text-xs text-slate-400 font-normal">/ 1 yr</span></div>
+                            <p class="text-xs text-amber-700 font-medium mt-1">₹10,500 for 2 years</p>
+                            <hr class="my-5 border-slate-100">
+                            <ul class="text-xs text-slate-600 space-y-2.5">
+                                <li class="flex items-center gap-2"><i class="ri-checkbox-circle-fill text-emerald-600 text-sm"></i> Career Hub Access</li>
+                                <li class="flex items-center gap-2"><i class="ri-checkbox-circle-fill text-emerald-600 text-sm"></i> Education Desk</li>
+                                <li class="flex items-center gap-2"><i class="ri-checkbox-circle-fill text-emerald-600 text-sm"></i> Govt. Scheme Guidance</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="mt-8 block text-center bg-slate-100 hover:bg-slate-800 hover:text-white text-slate-700 text-xs font-bold py-3 rounded-xl transition-all">Select Silver</a>
+                    </div>
+                    <div class="bg-slate-900 text-white p-6 rounded-2xl border-2 border-amber-500 shadow-xl relative flex flex-col justify-between transform lg:-translate-y-2 transition-all">
+                        <span class="absolute -top-3.5 right-4 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+                            Most Popular
+                        </span>
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-extrabold text-amber-400 uppercase tracking-widest">Gold</span>
+                                <i class="ri-vip-crown-line text-lg text-amber-400"></i>
+                            </div>
+                            <div class="text-3xl font-extrabold text-white mt-3">₹7,500 <span class="text-xs text-slate-400 font-normal">/ 1 yr</span></div>
+                            <p class="text-xs text-amber-300 font-medium mt-1">₹12,500 for 2 years</p>
+                            <hr class="my-5 border-slate-800">
+                            <ul class="text-xs text-slate-300 space-y-2.5">
+                                <li class="flex items-center gap-2"><i class="ri-checkbox-circle-fill text-amber-400 text-sm"></i> Career Hub Access</li>
+                                <li class="flex items-center gap-2"><i class="ri-checkbox-circle-fill text-amber-400 text-sm"></i> Education Desk</li>
+                                <li class="flex items-center gap-2"><i class="ri-checkbox-circle-fill text-amber-400 text-sm"></i> Govt. Scheme Guidance</li>
+                                <li class="flex items-center gap-2"><i class="ri-checkbox-circle-fill text-amber-400 text-sm"></i> Banking Point Facilitation</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="mt-8 block text-center bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs py-3 rounded-xl transition-all shadow-md">Select Gold</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-extrabold text-slate-500 uppercase tracking-widest">Platinum</span>
+                                <i class="ri-trophy-line text-lg text-slate-400"></i>
+                            </div>
+                            <div class="text-3xl font-extrabold text-slate-900 mt-3">₹10,500 <span class="text-xs text-slate-400 font-normal">/ 1 yr</span></div>
+                            <p class="text-xs text-amber-700 font-medium mt-1">₹18,500 for 2 years</p>
+                            <hr class="my-5 border-slate-100">
+                            <ul class="text-xs text-slate-600 space-y-2.5">
+                                <li class="flex items-center gap-2"><i class="ri-checkbox-circle-fill text-emerald-600 text-sm"></i> Education Desk & Career Hub</li>
+                                <li class="flex items-center gap-2"><i class="ri-checkbox-circle-fill text-emerald-600 text-sm"></i> All Govt. Schemes</li>
+                                <li class="flex items-center gap-2"><i class="ri-checkbox-circle-fill text-emerald-600 text-sm"></i> Finance Corner Integration</li>
+                                <li class="flex items-center gap-2"><i class="ri-checkbox-circle-fill text-emerald-600 text-sm"></i> Extended Priority Support</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="mt-8 block text-center bg-slate-100 hover:bg-slate-800 hover:text-white text-slate-700 text-xs font-bold py-3 rounded-xl transition-all">Select Platinum</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-extrabold text-slate-500 uppercase tracking-widest">Franchise</span>
+                                <i class="ri-store-2-line text-lg text-slate-400"></i>
+                            </div>
+                            <div class="text-3xl font-extrabold text-slate-900 mt-3">₹60,000 <span class="text-xs text-slate-400 font-normal">/ 1 yr</span></div>
+                            <p class="text-xs text-amber-700 font-medium mt-1">₹1,20,000 for 2 years</p>
+                            <hr class="my-5 border-slate-100">
+                            <ul class="text-xs text-slate-600 space-y-2.5">
+                                <li class="flex items-center gap-2"><i class="ri-checkbox-circle-fill text-emerald-600 text-sm"></i> Micro Store Option</li>
+                                <li class="flex items-center gap-2"><i class="ri-checkbox-circle-fill text-emerald-600 text-sm"></i> Mini Store Setup</li>
+                                <li class="flex items-center gap-2"><i class="ri-checkbox-circle-fill text-emerald-600 text-sm"></i> Full Commercial Store</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="mt-8 block text-center bg-slate-100 hover:bg-slate-800 hover:text-white text-slate-700 text-xs font-bold py-3 rounded-xl transition-all">Select Franchise</a>
+                    </div>
+
+                </div>
+            </section>
+            <section id="how" class="bg-white p-6 sm:p-10 lg:p-12 rounded-3xl border border-slate-200/80 shadow-sm space-y-8">
+                <div class="text-center max-w-xl mx-auto">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Simple Application Workflow</h2>
+                    <p class="text-slate-500 text-xs sm:text-sm mt-1.5">Apply for documents and certificates easily through 4 straight steps.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+                    
+                    <div class="group relative text-center bg-slate-50 p-6 rounded-2xl border border-slate-200/60 hover:bg-white hover:border-amber-500/50 hover:shadow-md transition-all">
+                        <div class="w-12 h-12 mx-auto rounded-xl bg-slate-900 text-amber-400 font-bold flex items-center justify-center text-lg shadow-md mb-4 group-hover:scale-110 transition-transform">
+                            1
+                        </div>
+                        <h3 class="font-bold text-slate-800 text-base">Sign Up or Login</h3>
+                        <p class="text-xs text-slate-500 mt-2 leading-relaxed">Register your profile to manage and track your applications.</p>
+                    </div>
+
+                    <div class="group relative text-center bg-slate-50 p-6 rounded-2xl border border-slate-200/60 hover:bg-white hover:border-amber-500/50 hover:shadow-md transition-all">
+                        <div class="w-12 h-12 mx-auto rounded-xl bg-slate-900 text-amber-400 font-bold flex items-center justify-center text-lg shadow-md mb-4 group-hover:scale-110 transition-transform">
+                            2
+                        </div>
+                        <h3 class="font-bold text-slate-800 text-base">Select Service</h3>
+                        <p class="text-xs text-slate-500 mt-2 leading-relaxed">Choose the relevant certificate or scheme you wish to apply for.</p>
+                    </div>
+
+                    <div class="group relative text-center bg-slate-50 p-6 rounded-2xl border border-slate-200/60 hover:bg-white hover:border-amber-500/50 hover:shadow-md transition-all">
+                        <div class="w-12 h-12 mx-auto rounded-xl bg-slate-900 text-amber-400 font-bold flex items-center justify-center text-lg shadow-md mb-4 group-hover:scale-110 transition-transform">
+                            3
+                        </div>
+                        <h3 class="font-bold text-slate-800 text-base">Fill Form & Upload</h3>
+                        <p class="text-xs text-slate-500 mt-2 leading-relaxed">Enter mandatory details and securely attach requested documents.</p>
+                    </div>
+
+                    <div class="group relative text-center bg-slate-50 p-6 rounded-2xl border border-slate-200/60 hover:bg-white hover:border-amber-500/50 hover:shadow-md transition-all">
+                        <div class="w-12 h-12 mx-auto rounded-xl bg-slate-900 text-amber-400 font-bold flex items-center justify-center text-lg shadow-md mb-4 group-hover:scale-110 transition-transform">
+                            4
+                        </div>
+                        <h3 class="font-bold text-slate-800 text-base">Track & Download</h3>
+                        <p class="text-xs text-slate-500 mt-2 leading-relaxed">Check real-time application updates and download your digital certificate.</p>
+                    </div>
+
+                </div>
+            </section>
+            <footer id="contact" class="bg-slate-900 text-slate-300 p-8 sm:p-12 rounded-3xl space-y-8 shadow-xl">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <div class="flex items-center gap-2 mb-3">
+                            <div class="w-7 h-7 rounded-lg bg-amber-500 text-white font-bold flex items-center justify-center text-sm">M</div>
+                            <h3 class="text-lg font-bold text-white tracking-wide">MAU'S GLOBAL</h3>
+                        </div>
+                        <p class="text-xs leading-relaxed text-slate-400">
+                            Assisting individuals and local enterprises with state scheme documentation, IT consultancy, digital design, and business licensing solutions across Maharashtra.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-sm font-bold text-white mb-3 uppercase tracking-wider">Contact Information</h4>
+                        <div class="space-y-2 text-xs text-slate-400">
+                            <p class="flex items-center gap-2"><i class="ri-phone-fill text-amber-400"></i> +91 9119480496</p>
+                            <p class="flex items-center gap-2"><i class="ri-mail-fill text-amber-400"></i> mausglobalprivatelimited@gmail.com</p>
+                            <address class="not-italic text-xs text-slate-400 mt-2 leading-relaxed flex items-start gap-2">
+                                <i class="ri-map-pin-fill text-amber-400 shrink-0 mt-0.5"></i>
+                                <span>L-1, Matoshree Nagar, Garkheda, Chhatrapati Sambhajinagar 431001, Maharashtra, India</span>
+                            </address>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-sm font-bold text-white mb-3 uppercase tracking-wider">Follow Our Socials</h4>
+                        <p class="text-xs text-slate-400 mb-4">Stay updated with the latest government scheme alerts.</p>
+                        <div class="flex gap-2.5">
+                            <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-amber-600 hover:text-white flex items-center justify-center text-slate-300 transition-colors">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="#" aria-label="YouTube" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-amber-600 hover:text-white flex items-center justify-center text-slate-300 transition-colors">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-amber-600 hover:text-white flex items-center justify-center text-slate-300 transition-colors">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-amber-600 hover:text-white flex items-center justify-center text-slate-300 transition-colors">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between gap-2 text-xs text-slate-500">
+                    <p>© 2026 MAU'S GLOBAL PRIVATE LIMITED. All Rights Reserved.</p>
+                    <p>Developed By :- Versatile Technology</p>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+    <a href="https://wa.me/919119480496" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"
+       class="group fixed bottom-5 right-5 z-50 bg-emerald-600 hover:bg-emerald-500 text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center text-2xl shadow-xl transition-all transform hover:scale-110 active:scale-95">
+        <i class="ri-whatsapp-fill"></i>
+        <span class="absolute right-16 bg-slate-900 text-white text-[11px] font-semibold px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md pointer-events-none">
+            Chat with us
+        </span>
+    </a>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggleBtn = document.getElementById('menu-toggle-btn');
+            const menuCloseBtn = document.getElementById('menu-close-btn');
+            const sidebarDrawer = document.getElementById('sidebar-drawer');
+            const mobileOverlay = document.getElementById('mobile-overlay');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            function openDrawer() {
+                sidebarDrawer.classList.remove('-translate-x-full');
+                mobileOverlay.classList.remove('hidden');
+                setTimeout(() => {
+                    mobileOverlay.classList.remove('opacity-0');
+                }, 10);
+                document.body.classList.add('overflow-hidden');
+            }
+
+            function closeDrawer() {
+                sidebarDrawer.classList.add('-translate-x-full');
+                mobileOverlay.classList.add('opacity-0');
+                setTimeout(() => {
+                    mobileOverlay.classList.add('hidden');
+                }, 300);
+                document.body.classList.remove('overflow-hidden');
+            }
+
+            if (menuToggleBtn) menuToggleBtn.addEventListener('click', openDrawer);
+            if (menuCloseBtn) menuCloseBtn.addEventListener('click', closeDrawer);
+            if (mobileOverlay) mobileOverlay.addEventListener('click', closeDrawer);
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    if (window.innerWidth < 1024) {
+                        closeDrawer();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
