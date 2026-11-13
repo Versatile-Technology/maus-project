@@ -27,6 +27,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- remixicons cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <script>
     tailwind.config = { theme: { extend: {
       colors: { brand: "#5B1A7A", dark: "#3B0F52", accent: "#FF6B57", accent_ink: "#2B0A05", soft: "#FFF1F3", ink: "#24102E", line: "#F6D5DD" },
@@ -248,7 +250,7 @@
     <section id="faq" class="bg-soft py-16 sm:py-20" aria-labelledby="faq-title">
       <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <h2 id="faq-title" class="text-center font-head text-3xl font-extrabold text-ink sm:text-4xl">Frequently Asked Questions</h2>
-        <div class="mt-8 space-y-3">
+        <div class="mt-8 space-y-3 mb-3">
           <details class="group rounded-3xl border border-line bg-white p-5 open:shadow-md" open>
             <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-head text-lg font-bold text-ink">
               <span>What is MAU'S GLOBAL?</span>
@@ -278,6 +280,7 @@
             <p class="faq-answer mt-3 leading-relaxed text-ink/80">Listed services include IT solutions, network design, software installation, cybersecurity, remote management, registration and licence assistance, marketing, branding and graphic designing.</p>
           </details>
         </div>
+		<a class="text-[18px]  read text-center ms-5" href="questions.html"><b>read more <i class="ri-arrow-right-line"></i></b></a>
       </div>
     </section>
 
@@ -339,18 +342,9 @@
   </a>
 
   <script>
-    const menuButton = document.getElementById("menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
-    menuButton.addEventListener("click", () => {
-      const isOpen = mobileMenu.classList.toggle("hidden") === false;
-      menuButton.setAttribute("aria-expanded", String(isOpen));
-    });
-    mobileMenu.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        mobileMenu.classList.add("hidden");
-        menuButton.setAttribute("aria-expanded", "false");
-      });
-    });
+    const b = document.getElementById('menu-btn'), m = document.getElementById('mobile-menu');
+  b.addEventListener('click', () => { const o = m.classList.toggle('hidden') === false; b.setAttribute('aria-expanded', o); });
+  m.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { m.classList.add('hidden'); b.setAttribute('aria-expanded', 'false'); }));
   </script>
 </body>
 </html>

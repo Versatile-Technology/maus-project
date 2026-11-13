@@ -342,22 +342,60 @@ tailwind.config = {
 </div>
 
 <header class="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur" id="home">
+
   <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+
     <a href="index.html" class="flex items-center gap-2" aria-label="MAU'S GLOBAL home">
-      <img src="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png" alt="MAU'S GLOBAL logo" width="160" height="48" class="h-10 w-auto sm:h-12">
+      <img
+        src="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png"
+        alt="MAU'S GLOBAL logo"
+        width="160"
+        height="48"
+        class="h-10 w-auto sm:h-12">
     </a>
-    <nav class="hidden items-center gap-1 lg:flex" aria-label="Primary"><a href="services.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Services</a><a href="#contact" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Contact Us</a><a href="about.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">About Us</a><a href="#how" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Apply Here</a><a href="#plans" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Plans</a></nav>
+
+    <nav class="hidden items-center gap-1 lg:flex" aria-label="Primary">
+      <a href="index.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Services</a>
+      <a href="contact.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Contact Us</a>
+      <a href="about.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">About Us</a>
+      <a href="#" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Apply Here</a>
+      <a href="#" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Plans</a>
+    </nav>
+
     <div class="flex items-center gap-2">
-      <a href="tel:+919119480496" class="hidden xl:flex flex-col text-right leading-tight text-sm font-semibold text-brand hover:text-dark"><span class="text-[11px] font-medium text-ink/60">Helpline</span>+91-9119480496</a>
-      <a href="#how" class="rounded-2xl bg-accent px-4 py-2 text-sm font-bold text-accent_ink hover:brightness-95 transition">Login</a>
-      <button id="menu-btn" type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-line text-brand lg:hidden" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle menu">
-        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <a href="tel:+919119480496" class="hidden xl:flex flex-col text-right leading-tight text-sm font-semibold text-brand hover:text-dark">
+        <span class="text-[11px] font-medium text-ink/60">Helpline</span>
+        +91-9119480496
+      </a>
+
+      <a href="#how" class="rounded-2xl bg-accent px-4 py-2 text-sm font-bold text-accent_ink hover:brightness-95 transition">
+        Login
+      </a>
+
+      <button id="menu-btn" type="button"
+        class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-line text-brand lg:hidden"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Toggle menu">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
       </button>
     </div>
   </div>
+
+  <!-- MOBILE MENU -->
   <div id="mobile-menu" class="hidden border-t border-line bg-white px-4 pb-4 lg:hidden">
-    <nav aria-label="Mobile"><a href="#services" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Services</a><a href="#contact" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Contact Us</a><a href="#about" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">About Us</a><a href="#how" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Apply Here</a><a href="#plans" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Plans</a>
-      <a href="tel:+919119480496" class="mt-2 block rounded-lg bg-soft px-4 py-3 font-semibold text-brand">Helpline +91-9119480496</a>
+    <nav aria-label="Mobile">
+      <a href="services.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Services</a>
+      <a href="contact.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Contact Us</a>
+      <a href="about.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">About Us</a>
+      <a href="#" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Apply Here</a>
+      <a href="#" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Plans</a>
+
+      <a href="tel:+919119480496" class="mt-2 block rounded-lg bg-soft px-4 py-3 font-semibold text-brand">
+        Helpline +91-9119480496
+      </a>
     </nav>
   </div>
 </header>
@@ -568,7 +606,7 @@ tailwind.config = {
           <p class="faq-answer mt-3 leading-relaxed text-ink/80">Certificate approval and issuance are handled by the relevant government authority. Confirm the exact service process before applying.</p>
         </details>
     </div>
-	<a class="text-[18px]  read text-center ms-5" href="#"><b>read more <i class="ri-arrow-right-line"></i></b></a>
+	<a class="text-[18px]  read text-center ms-5" href="questions.html"><b>read more <i class="ri-arrow-right-line"></i></b></a>
   </div>
 </section>
 
