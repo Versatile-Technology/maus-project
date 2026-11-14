@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OTP Verification | MAU'S GLOBAL</title>
+
+    <meta name="description" content="Verify your MAU'S GLOBAL account using the one-time password sent to your email address.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #FAF7FC;
+        }
+
+        .login-bg {
+            background: linear-gradient(135deg, #5B1A7A, #3B0F52);
+        }
+
+        .otp-input:focus {
+            border-color: #5B1A7A;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(91, 26, 122, 0.08);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="bg-white border-b border-purple-100">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <a href="index.html" class="flex items-center gap-2" aria-label="MAU'S GLOBAL home">
+				<img
+					src="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png"
+					alt="MAU'S GLOBAL logo"
+					width="160"
+					height="48"
+					class="h-10 w-auto sm:h-12">
+			</a>
+
+            <a href="index.html"
+               class="text-sm font-semibold text-[#5B1A7A] hover:text-[#FF6B57]">
+                <i class="ri-arrow-left-line"></i>
+                Home
+            </a>
+
+        </nav>
+    </header>
+    <main class="min-h-[85vh] flex items-center justify-center px-5 py-12">
+
+        <div class="max-w-5xl w-full grid md:grid-cols-2 bg-white rounded-3xl overflow-hidden shadow-xl border border-purple-100">
+
+            <!-- LEFT SIDE -->
+            <section class="login-bg flex flex-col justify-center p-10 md:p-14 relative overflow-hidden">
+
+                
+
+                <div class="relative z-10">
+
+                    <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-white text-3xl mb-8">
+                        <i class="ri-mail-check-line"></i>
+                    </div>
+
+                    <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight">
+                        Welcome
+                        <span class="text-[#FF8B73]">Back!</span>
+                    </h2>
+
+                    <p class="text-purple-100 mt-5 leading-7 text-sm">
+                        One more step to access your MAU'S GLOBAL account. Verify your identity and continue securely.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- RIGHT SIDE -->
+            <section class="p-8 md:p-12 flex flex-col justify-center">
+
+                <div class="mb-8">
+
+                    <div class="w-14 h-14 rounded-2xl bg-[#FFF1F3] flex items-center justify-center text-[#5B1A7A] text-2xl mb-6">
+                        <i class="ri-shield-keyhole-line"></i>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-[#3B0F52]">
+                        OTP Verification
+                    </h2>
+
+                    <p class="text-gray-500 text-sm mt-3 leading-6">
+                        Enter the 6-digit verification code sent to your email address.
+                    </p>
+
+                    <p class="text-[#5B1A7A] font-semibold text-sm mt-2">
+                        example@gmail.com
+                    </p>
+
+                </div>
+
+
+                <!-- OTP FORM -->
+                <form>
+                    <label class="block text-sm font-semibold text-gray-700 mb-3">
+                        Enter Verification Code
+                    </label>
+
+                    <div class="flex gap-2 sm:gap-3 mb-6">
+
+                        <input type="text" name="otp1" maxlength="1" inputmode="numeric" required
+                               class="otp-input w-full h-14 text-center text-xl font-bold border border-gray-200 rounded-xl">
+
+                        <input type="text" name="otp2" maxlength="1" inputmode="numeric" required
+                               class="otp-input w-full h-14 text-center text-xl font-bold border border-gray-200 rounded-xl">
+
+                        <input type="text" name="otp3" maxlength="1" inputmode="numeric" required
+                               class="otp-input w-full h-14 text-center text-xl font-bold border border-gray-200 rounded-xl">
+
+                        <input type="text" name="otp4" maxlength="1" inputmode="numeric" required
+                               class="otp-input w-full h-14 text-center text-xl font-bold border border-gray-200 rounded-xl">
+
+                        <input type="text" name="otp5" maxlength="1" inputmode="numeric" required
+                               class="otp-input w-full h-14 text-center text-xl font-bold border border-gray-200 rounded-xl">
+
+                        <input type="text" name="otp6" maxlength="1" inputmode="numeric" required
+                               class="otp-input w-full h-14 text-center text-xl font-bold border border-gray-200 rounded-xl">
+
+                    </div>
+                    <button type="submit"
+                            class="login-bg w-full text-white py-3.5 rounded-xl font-semibold hover:opacity-90 transition">
+
+                        Verify OTP
+                        <i class="ri-arrow-right-line ml-1"></i>
+
+                    </button>
+                    <div class="text-center mt-6">
+
+                        <p class="text-sm text-gray-500">
+                            Didn't receive the code?
+                        </p>
+
+                        <a href="#"
+                           class="text-sm font-bold text-[#5B1A7A] hover:text-[#FF6B57] mt-2 inline-block">
+                            Resend OTP
+                        </a>
+
+                    </div>
+
+                </form>
+                <div class="border-t border-gray-100 mt-7 pt-6 text-center">
+
+                    <a href="login.html"
+                       class="text-sm font-semibold text-gray-500 hover:text-[#5B1A7A]">
+
+                        <i class="ri-arrow-left-line"></i>
+                        Back to Login
+
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="py-5 text-center text-sm text-gray-500">
+
+        © 2026 MAU'S GLOBAL. All Rights Reserved.
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration | MAU'S GLOBAL</title>
+
+    <meta name="description" content="Register your account with MAU'S GLOBAL. Submit your personal details, shop information, address, and profile photo.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #FAF7FC;
+        }
+
+        .login-bg {
+            background: linear-gradient(135deg, #5B1A7A, #3B0F52);
+        }
+
+        .input-box:focus {
+            border-color: #5B1A7A;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(91, 26, 122, 0.08);
+        }
+
+        .file-box {
+            border: 1px dashed #D9C5E5;
+            background: #FAF7FC;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="bg-white border-b border-purple-100">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+             <a href="index.html" class="flex items-center gap-2" aria-label="MAU'S GLOBAL home">
+				<img
+					src="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png"
+					alt="MAU'S GLOBAL logo"
+					width="160"
+					height="48"
+					class="h-10 w-auto sm:h-12">
+			</a>
+
+            <a href="index.html"
+               class="text-sm font-semibold text-[#5B1A7A] hover:text-[#FF6B57]">
+
+                <i class="ri-arrow-left-line"></i>
+                Home
+
+            </a>
+
+        </nav>
+    </header>
+
+
+    <!-- REGISTRATION SECTION -->
+    <main class="min-h-screen flex items-center justify-center px-5 py-12">
+
+        <div class="max-w-5xl w-full grid md:grid-cols-2 bg-white rounded-3xl overflow-hidden shadow-xl border border-purple-100">
+
+
+            <!-- LEFT SIDE -->
+            <section class="login-bg flex flex-col justify-center p-10 md:p-14 relative overflow-hidden">
+                <div class="relative z-10">
+
+                    <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-white text-3xl mb-8">
+                        <i class="ri-user-add-line"></i>
+                    </div>
+
+                    <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight">
+
+                        Create Your
+                        <span class="text-[#FF8B73]">Account</span>
+
+                    </h2>
+
+                    <p class="text-purple-100 mt-5 leading-7 text-sm">
+
+                        Join MAU'S GLOBAL and get started with your personalized account. Register your personal and shop details to access our services.
+
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- RIGHT SIDE -->
+            <section class="p-8 md:p-10">
+
+                <div class="mb-7">
+
+                    <h2 class="text-2xl font-bold text-[#3B0F52]">
+                        Registration
+                    </h2>
+
+                    <p class="text-gray-500 text-sm mt-2">
+                        Fill in your details to create an account.
+                    </p>
+
+                </div>
+
+
+                <!-- REGISTRATION FORM -->
+                <form action="otp-verification.html" method="POST" enctype="multipart/form-data">
+                    <div class="mb-6">
+
+                        <label class="block text-sm font-semibold text-gray-700 mb-3">
+                            Profile Photo
+                        </label>
+
+                        <label for="profilePhoto"
+                               class="file-box rounded-xl p-4 flex items-center gap-4 cursor-pointer hover:border-[#5B1A7A] transition">
+
+                            <div class="w-14 h-14 rounded-full bg-purple-100 flex items-center justify-center text-[#5B1A7A] text-2xl">
+
+                                <i class="ri-camera-line"></i>
+
+                            </div>
+
+                            <div>
+
+                                <p class="text-sm font-semibold text-[#3B0F52]">
+                                    Upload Profile Photo
+                                </p>
+
+                                <p class="text-xs text-gray-400 mt-1">
+                                    JPG, PNG or WEBP
+                                </p>
+
+                            </div>
+
+                            <input type="file"
+                                   id="profilePhoto"
+                                   name="profilePhoto"
+                                   accept="image/*"
+                                   required
+                                   class="hidden">
+
+                        </label>
+
+                    </div>
+                    <div class="mb-4">
+
+                        <label for="name"
+                               class="block text-sm font-semibold text-gray-700 mb-2">
+
+                            Full Name
+
+                        </label>
+
+                        <div class="relative">
+
+                            <i class="ri-user-line absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+
+                            <input type="text"
+                                   id="name"
+                                   name="name"
+                                   placeholder="Enter your full name"
+                                   required
+                                   class="input-box w-full border border-gray-200 rounded-xl py-3 pl-11 pr-4 text-sm">
+
+                        </div>
+
+                    </div>
+                    <div class="mb-4">
+
+                        <label for="email"
+                               class="block text-sm font-semibold text-gray-700 mb-2">
+
+                            Email Address
+
+                        </label>
+
+                        <div class="relative">
+
+                            <i class="ri-mail-line absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+
+                            <input type="email"
+                                   id="email"
+                                   name="email"
+                                   placeholder="Enter your email address"
+                                   required
+                                   class="input-box w-full border border-gray-200 rounded-xl py-3 pl-11 pr-4 text-sm">
+
+                        </div>
+
+                    </div>
+                    <div class="mb-4">
+
+                        <label for="mobile"
+                               class="block text-sm font-semibold text-gray-700 mb-2">
+
+                            Mobile Number
+
+                        </label>
+
+                        <div class="relative">
+
+                            <i class="ri-phone-line absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+
+                            <input type="tel"
+                                   id="mobile"
+                                   name="mobile"
+                                   placeholder="Enter mobile number"
+                                   required
+                                   class="input-box w-full border border-gray-200 rounded-xl py-3 pl-11 pr-4 text-sm">
+
+                        </div>
+
+                    </div>
+                    <div class="mb-4">
+
+                        <label for="address"
+                               class="block text-sm font-semibold text-gray-700 mb-2">
+
+                            Address
+
+                        </label>
+
+                        <div class="relative">
+
+                            <i class="ri-map-pin-line absolute left-4 top-4 text-gray-400"></i>
+
+                            <textarea id="address"
+                                      name="address"
+                                      rows="2"
+                                      placeholder="Enter your residential address"
+                                      required
+                                      class="input-box w-full border border-gray-200 rounded-xl py-3 pl-11 pr-4 text-sm resize-none"></textarea>
+
+                        </div>
+
+                    </div>
+                    <div class="border-t border-purple-100 pt-5 mt-5 mb-5">
+
+                        <h3 class="text-sm font-bold text-[#5B1A7A]">
+                            Shop Information
+                        </h3>
+
+                    </div>
+                    <div class="mb-4">
+
+                        <label for="shopName"
+                               class="block text-sm font-semibold text-gray-700 mb-2">
+
+                            Shop Name
+
+                        </label>
+
+                        <div class="relative">
+
+                            <i class="ri-store-2-line absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+
+                            <input type="text"
+                                   id="shopName"
+                                   name="shopName"
+                                   placeholder="Enter your shop name"
+                                   required
+                                   class="input-box w-full border border-gray-200 rounded-xl py-3 pl-11 pr-4 text-sm">
+
+                        </div>
+
+                    </div>
+                    <div class="mb-4">
+
+                        <label for="district"
+                               class="block text-sm font-semibold text-gray-700 mb-2">
+
+                            District
+
+                        </label>
+
+                        <div class="relative">
+
+                            <i class="ri-community-line absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+
+                            <select id="district"
+                                    name="district"
+                                    required
+                                    class="input-box w-full border border-gray-200 rounded-xl py-3 pl-11 pr-4 text-sm bg-white">
+
+                                <option value="">Select District</option>
+                                <option value="Chhatrapati Sambhajinagar">Chhatrapati Sambhajinagar</option>
+                                <option value="Pune">Pune</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Nashik">Nashik</option>
+                                <option value="Nagpur">Nagpur</option>
+                                <option value="Jalna">Jalna</option>
+                                <option value="Beed">Beed</option>
+                                <option value="Latur">Latur</option>
+                                <option value="Nanded">Nanded</option>
+                                <option value="Other">Other</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+                    <div class="mb-6">
+
+                        <label for="shopAddress"
+                               class="block text-sm font-semibold text-gray-700 mb-2">
+
+                            Shop Address
+
+                        </label>
+
+                        <div class="relative">
+
+                            <i class="ri-map-pin-2-line absolute left-4 top-4 text-gray-400"></i>
+
+                            <textarea id="shopAddress"
+                                      name="shopAddress"
+                                      rows="2"
+                                      placeholder="Enter your complete shop address"
+                                      required
+                                      class="input-box w-full border border-gray-200 rounded-xl py-3 pl-11 pr-4 text-sm resize-none"></textarea>
+
+                        </div>
+
+                    </div>
+                    <button type="submit"
+                            class="login-bg w-full text-white py-3.5 rounded-xl font-semibold hover:opacity-90 transition">
+
+                        Create Account
+                        <i class="ri-arrow-right-line ml-1"></i>
+
+                    </button>
+                    <p class="text-center text-sm text-gray-500 mt-6">
+
+                        Already have an account?
+
+                        <a href="login.html"
+                           class="font-bold text-[#5B1A7A] hover:text-[#FF6B57]">
+
+                            Login
+
+                        </a>
+
+                    </p>
+					<p class="text-center text-sm text-gray-500 mt-6">
+
+                       Login Circle Manager?
+
+                        <a href="#"
+                           class="font-bold text-[#5B1A7A] hover:text-[#FF6B57]">
+
+                            Login Here
+
+                        </a>
+
+                    </p>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="py-5 text-center text-sm text-gray-500">
+
+        © 2026 MAU'S GLOBAL. All Rights Reserved.
+
+    </footer>
+
+</body>
+</html>
