@@ -1,0 +1,924 @@
+
+<!DOCTYPE html>
+<html lang="en-IN" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Apply Here | MAU'S GLOBAL PRIVATE LIMITED</title>
+<meta name="description" content="Apply for customer services with MAU'S GLOBAL. Enter customer details, choose a service, upload required documents and complete wallet payment.">
+<meta name="theme-color" content="#3B0F52">
+<meta name="robots" content="index, follow">
+
+<link rel="icon" href="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        brand: "#5B1A7A",
+        dark: "#3B0F52",
+        accent: "#FF6B57",
+        accent_ink: "#2B0A05",
+        soft: "#FFF1F3",
+        ink: "#24102E",
+        line: "#F6D5DD"
+      },
+      fontFamily: {
+        head: ['"Sora"', 'Hind', 'sans-serif'],
+        sans: ['Hind', '"Noto Sans Devanagari"', 'system-ui', 'sans-serif']
+      }
+    }
+  }
+};
+</script>
+
+<style>
+body {
+  font-family: Hind, "Noto Sans Devanagari", system-ui, sans-serif;
+  background: #fff;
+  color: #24102E;
+}
+
+:focus-visible {
+  outline: 3px solid #FF6B57;
+  outline-offset: 2px;
+}
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.ticker-track {
+  animation: ticker 40s linear infinite;
+}
+
+.ticker:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track {
+    animation: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition: none !important;
+  }
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+.form-input {
+  width: 100%;
+  border: 1px solid #F6D5DD;
+  border-radius: 14px;
+  padding: 12px 15px;
+  background: #fff;
+  color: #24102E;
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.form-input:focus {
+  border-color: #5B1A7A;
+  box-shadow: 0 0 0 3px rgba(91, 26, 122, .08);
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 7px;
+  color: #24102E;
+}
+
+.upload-card {
+  border: 1px dashed #D9B9E5;
+  background: #FCF8FF;
+  border-radius: 20px;
+  transition: .25s ease;
+}
+
+.upload-card:hover {
+  border-color: #5B1A7A;
+  background: #F8F0FC;
+}
+
+.step-icon {
+  display: flex;
+  height: 48px;
+  width: 48px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: #FFF1F3;
+  color: #5B1A7A;
+  font-size: 24px;
+}
+
+</style>
+</head>
+
+<body class="antialiased">
+
+<!-- SKIP LINK -->
+<a href="#main-content"
+   class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-accent focus:px-4 focus:py-2 focus:font-bold focus:text-accent_ink">
+  Skip to content
+</a>
+
+<!-- SCHEME TICKER - SAME AS INDEX -->
+<div class="ticker overflow-hidden bg-dark text-white" role="region" aria-label="Government scheme updates" lang="mr">
+  <div class="ticker-track flex w-max whitespace-nowrap py-2 text-sm font-medium">
+    <span class="px-4">
+      आंबेडकर शिक्षणवृत्ती योजना - मागासवर्गीय विद्यार्थ्यांसाठी आर्थिक मदत &nbsp;•&nbsp;
+      प्रधानमंत्री रोजगार निर्मिती कार्यक्रम &nbsp;•&nbsp;
+      आंबेडकर शिक्षणवृत्ती योजना - मागासवर्गीय विद्यार्थ्यांसाठी आर्थिक मदत &nbsp;•&nbsp;
+      प्रधानमंत्री रोजगार निर्मिती कार्यक्रम &nbsp;•&nbsp;
+    </span>
+    <span class="px-4" aria-hidden="true">
+      आंबेडकर शिक्षणवृत्ती योजना - मागासवर्गीय विद्यार्थ्यांसाठी आर्थिक मदत &nbsp;•&nbsp;
+      प्रधानमंत्री रोजगार निर्मिती कार्यक्रम &nbsp;•&nbsp;
+      आंबेडकर शिक्षणवृत्ती योजना - मागासवर्गीय विद्यार्थ्यांसाठी आर्थिक मदत &nbsp;•&nbsp;
+      प्रधानमंत्री रोजगार निर्मिती कार्यक्रम &nbsp;•&nbsp;
+    </span>
+  </div>
+</div>
+
+<!-- NAVBAR - SAME AS INDEX -->
+<header class="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur" id="home">
+
+  <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+
+    <a href="index.html" class="flex items-center gap-2" aria-label="MAU'S GLOBAL home">
+      <img
+        src="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png"
+        alt="MAU'S GLOBAL logo"
+        width="160"
+        height="48"
+        class="h-10 w-auto sm:h-12">
+    </a>
+
+    <nav class="hidden items-center gap-1 lg:flex" aria-label="Primary">
+      <a href="services.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Services</a>
+      <a href="contact.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Contact Us</a>
+      <a href="about.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">About Us</a>
+      <a href="apply.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-brand bg-soft transition-colors">Apply Here</a>
+      <a href="plans.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Plans</a>
+    </nav>
+
+    <div class="flex items-center gap-2">
+
+      <a href="tel:+919119480496" class="hidden xl:flex flex-col text-right leading-tight text-sm font-semibold text-brand hover:text-dark">
+        <span class="text-[11px] font-medium text-ink/60">Helpline</span>
+        +91-9119480496
+      </a>
+
+      <a href="login.html" class="rounded-2xl bg-accent px-4 py-2 text-sm font-bold text-accent_ink hover:brightness-95 transition">
+        Login
+      </a>
+
+      <button id="menu-btn" type="button"
+        class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-line text-brand lg:hidden"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Toggle menu">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="hidden border-t border-line bg-white px-4 pb-4 lg:hidden">
+    <nav aria-label="Mobile">
+      <a href="services.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Services</a>
+      <a href="contact.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Contact Us</a>
+      <a href="about.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">About Us</a>
+      <a href="apply.html" class="block px-4 py-3 rounded-lg font-semibold text-brand bg-soft">Apply Here</a>
+      <a href="plans.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Plans</a>
+
+      <a href="tel:+919119480496" class="mt-2 block rounded-lg bg-soft px-4 py-3 font-semibold text-brand">
+        Helpline +91-9119480496
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+
+<!-- HERO - SAME GRADIENT AND STRUCTURE AS INDEX -->
+<section class="relative overflow-hidden bg-gradient-to-b from-dark via-brand to-[#8a2fb0] text-white" aria-labelledby="hero-title">
+
+  <div class="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-accent/25 blur-3xl" aria-hidden="true"></div>
+  <div class="pointer-events-none absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-white/10 blur-3xl" aria-hidden="true"></div>
+
+  <div class="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:py-24">
+
+    <div class="lg:order-1">
+
+      <p class="inline-block rounded-full bg-white/15 px-4 py-1.5 text-sm font-semibold backdrop-blur">
+        MAU'S GLOBAL PRIVATE LIMITED
+      </p>
+
+      <h1 id="hero-title" class="mt-5 font-head text-4xl font-extrabold leading-[1.1] sm:text-5xl lg:text-6xl">
+        Apply for a <span class="text-accent">Customer</span>
+      </h1>
+
+      <p class="mt-4 text-xl text-white/90 sm:text-2xl">
+        Simple, Secure &amp; Hassle-Free Application!
+      </p>
+
+      <p class="mt-4 max-w-xl leading-relaxed text-white/80">
+        Enter customer information, select the required service, upload documents
+        and complete the application using your wallet balance.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#application-form" class="rounded-2xl bg-accent px-7 py-3.5 text-base font-bold text-accent_ink shadow-lg hover:brightness-95 transition">
+          Start Application →
+        </a>
+
+        <a href="tel:+919119480496" class="rounded-2xl border-2 border-white/60 px-7 py-3.5 text-base font-bold text-white hover:bg-white hover:text-dark transition">
+          Helpline +91-9119480496
+        </a>
+      </div>
+
+    </div>
+
+    <div class="lg:order-2">
+      <div class="mx-auto w-full max-w-xl rounded-t-[10rem] rounded-b-3xl border border-white/20 bg-white/10 p-8 shadow-2xl backdrop-blur-sm sm:p-10">
+
+        <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-3xl bg-white text-brand shadow-lg">
+          <i class="ri-file-edit-line text-5xl"></i>
+        </div>
+
+        <h2 class="mt-7 text-center font-head text-2xl font-extrabold sm:text-3xl">
+          Customer Application Portal
+        </h2>
+
+        <p class="mt-3 text-center leading-relaxed text-white/80">
+          Complete the application process with customer details,
+          required documents and wallet payment.
+        </p>
+
+        <div class="mt-7 grid grid-cols-3 gap-3 text-center">
+          <div class="rounded-2xl bg-white/10 p-4">
+            <i class="ri-user-line text-2xl text-accent"></i>
+            <p class="mt-2 text-xs font-semibold">Customer</p>
+          </div>
+          <div class="rounded-2xl bg-white/10 p-4">
+            <i class="ri-file-upload-line text-2xl text-accent"></i>
+            <p class="mt-2 text-xs font-semibold">Documents</p>
+          </div>
+          <div class="rounded-2xl bg-white/10 p-4">
+            <i class="ri-wallet-3-line text-2xl text-accent"></i>
+            <p class="mt-2 text-xs font-semibold">Wallet</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- APPLICATION FORM -->
+<section id="application-form" class="bg-white py-16 sm:py-20" aria-labelledby="application-title">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+    <div class="mx-auto max-w-3xl text-center">
+      <h2 id="application-title" class="font-head text-3xl font-extrabold text-ink sm:text-4xl">
+        Customer Application Form
+      </h2>
+
+      <h3 class="mt-3 text-lg font-medium text-brand sm:text-xl">
+        Fill in the details to proceed with the selected service.
+      </h3>
+    </div>
+
+    <div class="mt-10 grid items-start gap-8 lg:grid-cols-2">
+
+      <!-- FORM COLUMN -->
+      <div class="space-y-6">
+
+        <form action="#" method="POST" enctype="multipart/form-data" class="space-y-6">
+
+          <!-- CUSTOMER PHONE -->
+          <article class="rounded-3xl border border-line bg-white p-6 shadow-md sm:p-8">
+
+            <div class="flex items-center gap-4">
+              <div class="step-icon">
+                <i class="ri-phone-line"></i>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-brand">Step 01</p>
+                <h3 class="font-head text-xl font-bold text-ink">Customer Phone</h3>
+              </div>
+            </div>
+
+            <div class="mt-6">
+              <label for="customer-phone" class="form-label">
+                Customer Mobile Number <span class="text-accent">*</span>
+              </label>
+
+              <div class="flex flex-col gap-3 sm:flex-row">
+                <input
+                  type="tel"
+                  id="customer-phone"
+                  name="customer_phone"
+                  class="form-input"
+                  placeholder="Enter 10 digit mobile number"
+                  pattern="[0-9]{10}"
+                  maxlength="10"
+                  required>
+
+                <button type="button" class="shrink-0 rounded-2xl bg-brand px-6 py-3 font-bold text-white transition hover:bg-dark">
+                  Find Customer
+                </button>
+              </div>
+
+              <p class="mt-3 text-sm text-ink/60">
+                Enter the customer's registered mobile number.
+              </p>
+            </div>
+
+          </article>
+
+          <!-- SERVICE SELECTION -->
+          <article class="rounded-3xl border border-line bg-white p-6 shadow-md sm:p-8">
+
+            <div class="flex items-center gap-4">
+              <div class="step-icon">
+                <i class="ri-service-line"></i>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-brand">Step 02</p>
+                <h3 class="font-head text-xl font-bold text-ink">Select Service</h3>
+              </div>
+            </div>
+
+            <div class="mt-6 space-y-5">
+
+              <div>
+                <label for="service-category" class="form-label">
+                  Service Category <span class="text-accent">*</span>
+                </label>
+
+                <select id="service-category" name="service_category" class="form-input" required>
+                  <option value="">Select service category</option>
+                  <option>Government Certificates</option>
+                  <option>Education Schemes</option>
+                  <option>Registration & Licence Services</option>
+                  <option>Information Technology Services</option>
+                  <option>Marketing and Other Services</option>
+                  <option>Graphic Designing</option>
+                  <option>Other Services</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="service-name" class="form-label">
+                  Required Service <span class="text-accent">*</span>
+                </label>
+
+                <select id="service-name" name="service_name" class="form-input" required>
+                  <option value="">Choose required service</option>
+                  <option>Government Certificate Application</option>
+                  <option>Education Scheme Application</option>
+                  <option>Business Registration</option>
+                  <option>Licence Application</option>
+                  <option>IT Service Request</option>
+                  <option>Digital Marketing Service</option>
+                  <option>Graphic Design Service</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="application-description" class="form-label">
+                  Application Description
+                </label>
+
+                <textarea
+                  id="application-description"
+                  name="application_description"
+                  rows="4"
+                  class="form-input"
+                  placeholder="Enter additional details about the service..."></textarea>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- CUSTOMER DETAILS -->
+          <article class="rounded-3xl border border-line bg-white p-6 shadow-md sm:p-8">
+
+            <div class="flex items-center gap-4">
+              <div class="step-icon">
+                <i class="ri-user-line"></i>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-brand">Step 03</p>
+                <h3 class="font-head text-xl font-bold text-ink">Customer Details</h3>
+              </div>
+            </div>
+
+            <div class="mt-6 grid gap-5 sm:grid-cols-2">
+
+              <div>
+                <label for="customer-name" class="form-label">
+                  Full Name <span class="text-accent">*</span>
+                </label>
+                <input type="text" id="customer-name" name="customer_name" class="form-input" placeholder="Customer full name" required>
+              </div>
+
+              <div>
+                <label for="customer-email" class="form-label">Email Address</label>
+                <input type="email" id="customer-email" name="customer_email" class="form-input" placeholder="Customer email">
+              </div>
+
+              <div>
+                <label for="alternate-phone" class="form-label">Alternate Phone</label>
+                <input type="tel" id="alternate-phone" name="alternate_phone" class="form-input" placeholder="Alternate mobile number">
+              </div>
+
+              <div>
+                <label for="customer-dob" class="form-label">Date of Birth</label>
+                <input type="date" id="customer-dob" name="customer_dob" class="form-input">
+              </div>
+
+              <div>
+                <label for="customer-district" class="form-label">District</label>
+                <input type="text" id="customer-district" name="district" class="form-input" placeholder="Enter district">
+              </div>
+
+              <div>
+                <label for="customer-address" class="form-label">
+                  Address <span class="text-accent">*</span>
+                </label>
+                <input type="text" id="customer-address" name="customer_address" class="form-input" placeholder="Customer address" required>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- DOCUMENT UPLOAD -->
+          <article class="rounded-3xl border border-line bg-white p-6 shadow-md sm:p-8">
+
+            <div class="flex items-center gap-4">
+              <div class="step-icon">
+                <i class="ri-file-upload-line"></i>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-brand">Step 04</p>
+                <h3 class="font-head text-xl font-bold text-ink">Upload Documents</h3>
+              </div>
+            </div>
+
+            <p class="mt-4 text-sm leading-relaxed text-ink/70">
+              Upload the required documents for the selected service.
+              Ensure that all files are clear and readable.
+            </p>
+
+            <div class="mt-6 grid gap-5 sm:grid-cols-2">
+
+              <div>
+                <label for="identity-proof" class="form-label">Identity Proof <span class="text-accent">*</span></label>
+                <div class="upload-card p-5">
+                  <div class="text-center">
+                    <i class="ri-id-card-line text-3xl text-brand"></i>
+                    <p class="mt-2 font-semibold">Identity Document</p>
+                    <p class="mt-1 text-xs text-ink/60">PDF, JPG, PNG</p>
+                  </div>
+                  <input type="file" id="identity-proof" name="identity_proof" accept=".pdf,.jpg,.jpeg,.png" class="mt-4 w-full text-sm" required>
+                </div>
+              </div>
+
+              <div>
+                <label for="address-proof" class="form-label">Address Proof</label>
+                <div class="upload-card p-5">
+                  <div class="text-center">
+                    <i class="ri-map-pin-line text-3xl text-brand"></i>
+                    <p class="mt-2 font-semibold">Address Document</p>
+                    <p class="mt-1 text-xs text-ink/60">PDF, JPG, PNG</p>
+                  </div>
+                  <input type="file" id="address-proof" name="address_proof" accept=".pdf,.jpg,.jpeg,.png" class="mt-4 w-full text-sm">
+                </div>
+              </div>
+
+              <div>
+                <label for="customer-photo" class="form-label">Customer Photograph</label>
+                <div class="upload-card p-5">
+                  <div class="text-center">
+                    <i class="ri-image-line text-3xl text-brand"></i>
+                    <p class="mt-2 font-semibold">Customer Photo</p>
+                    <p class="mt-1 text-xs text-ink/60">JPG, PNG</p>
+                  </div>
+                  <input type="file" id="customer-photo" name="customer_photo" accept=".jpg,.jpeg,.png" class="mt-4 w-full text-sm">
+                </div>
+              </div>
+
+              <div>
+                <label for="other-documents" class="form-label">Other Documents</label>
+                <div class="upload-card p-5">
+                  <div class="text-center">
+                    <i class="ri-file-add-line text-3xl text-brand"></i>
+                    <p class="mt-2 font-semibold">Additional Documents</p>
+                    <p class="mt-1 text-xs text-ink/60">PDF, JPG, PNG</p>
+                  </div>
+                  <input type="file" id="other-documents" name="other_documents" accept=".pdf,.jpg,.jpeg,.png" class="mt-4 w-full text-sm">
+                </div>
+              </div>
+
+            </div>
+
+            <p class="mt-5 text-xs text-ink/60">
+              Upload personal documents only with the customer's consent.
+            </p>
+          </article>
+
+          <!-- WALLET PAYMENT -->
+          <article class="rounded-3xl border border-line bg-white p-6 shadow-md sm:p-8">
+
+            <div class="flex items-center gap-4">
+              <div class="step-icon">
+                <i class="ri-wallet-3-line"></i>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-brand">Step 05</p>
+                <h3 class="font-head text-xl font-bold text-ink">Wallet Payment</h3>
+              </div>
+            </div>
+
+            <!-- WALLET BALANCE -->
+            <div class="mt-6 rounded-3xl bg-soft p-5">
+
+              <div class="flex flex-wrap items-center justify-between gap-4">
+
+                <div class="flex items-center gap-3">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand text-2xl text-white">
+                    <i class="ri-wallet-3-line"></i>
+                  </div>
+
+                  <div>
+                    <p class="font-bold text-ink">Wallet Balance</p>
+                    <p class="text-sm text-ink/60">Available balance</p>
+                  </div>
+                </div>
+
+                <div class="text-right">
+                  <p class="font-head text-2xl font-extrabold text-brand">₹ 0.00</p>
+                  <a href="#" class="text-sm font-semibold text-brand underline">
+                    Add Money
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- PAYMENT SUMMARY -->
+            <div class="mt-5 overflow-hidden rounded-2xl border border-line">
+
+              <div class="flex items-center justify-between border-b border-line p-4">
+                <span class="text-ink/70">Service Charges</span>
+                <span class="font-semibold">₹ 0.00</span>
+              </div>
+
+              <div class="flex items-center justify-between border-b border-line p-4">
+                <span class="text-ink/70">Processing Fee</span>
+                <span class="font-semibold">₹ 0.00</span>
+              </div>
+
+              <div class="flex items-center justify-between bg-soft p-4">
+                <span class="font-bold text-ink">Total Amount</span>
+                <span class="font-head text-xl font-extrabold text-brand">₹ 0.00</span>
+              </div>
+
+            </div>
+
+            <label class="mt-5 flex items-start gap-3 text-sm text-ink/70">
+              <input type="checkbox" name="payment_authorization" required class="mt-1 accent-brand">
+              <span>
+                I confirm that the customer details and uploaded documents are correct,
+                and authorize payment from the wallet.
+              </span>
+            </label>
+
+          </article>
+
+          <!-- SUBMIT BUTTON -->
+          <div class="rounded-3xl border border-line bg-soft p-6 sm:p-8">
+
+            <div class="flex flex-col items-start justify-between gap-5 sm:flex-row sm:items-center">
+
+              <div>
+                <h3 class="font-head text-xl font-bold text-ink">Submit Application</h3>
+                <p class="mt-2 text-sm text-ink/60">
+                  Review the details before submitting.
+                </p>
+              </div>
+
+              <button type="submit" class="w-full rounded-2xl bg-brand px-8 py-4 font-bold text-white shadow-lg transition hover:bg-dark sm:w-auto">
+                Submit Application
+                <i class="ri-arrow-right-line ml-2"></i>
+              </button>
+
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="space-y-8">
+
+        <!-- PROCESS CARD -->
+        <article class="rounded-3xl border border-line bg-white p-6 shadow-md sm:p-8">
+
+          <h3 class="font-head text-2xl font-extrabold text-ink">
+            Application Process
+          </h3>
+
+          <p class="mt-3 leading-relaxed text-ink/70">
+            Follow these simple steps to complete the customer application.
+          </p>
+
+          <div class="mt-8 space-y-6">
+
+            <div class="flex gap-4">
+              <div class="step-icon"><i class="ri-phone-line"></i></div>
+              <div>
+                <h4 class="font-bold text-ink">Enter Customer Phone</h4>
+                <p class="mt-1 text-sm leading-relaxed text-ink/65">
+                  Identify the customer using their registered mobile number.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="step-icon"><i class="ri-service-line"></i></div>
+              <div>
+                <h4 class="font-bold text-ink">Choose a Service</h4>
+                <p class="mt-1 text-sm leading-relaxed text-ink/65">
+                  Select the service category and required service.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="step-icon"><i class="ri-user-line"></i></div>
+              <div>
+                <h4 class="font-bold text-ink">Fill Customer Details</h4>
+                <p class="mt-1 text-sm leading-relaxed text-ink/65">
+                  Complete the customer's personal and contact information.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="step-icon"><i class="ri-file-upload-line"></i></div>
+              <div>
+                <h4 class="font-bold text-ink">Upload Documents</h4>
+                <p class="mt-1 text-sm leading-relaxed text-ink/65">
+                  Attach the documents needed for the selected service.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="step-icon"><i class="ri-wallet-3-line"></i></div>
+              <div>
+                <h4 class="font-bold text-ink">Wallet Payment</h4>
+                <p class="mt-1 text-sm leading-relaxed text-ink/65">
+                  Review charges and complete payment from the wallet.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- WALLET CARD -->
+        <article class="rounded-3xl bg-gradient-to-b from-dark via-brand to-[#8a2fb0] p-6 text-white shadow-xl sm:p-8">
+
+          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/15 text-3xl">
+            <i class="ri-wallet-3-line"></i>
+          </div>
+
+          <h3 class="mt-5 font-head text-2xl font-extrabold">
+            Wallet Payment
+          </h3>
+
+          <p class="mt-3 leading-relaxed text-white/80">
+            Make service payments conveniently through your wallet.
+            Ensure that sufficient balance is available before submitting an application.
+          </p>
+
+          <a href="#" class="mt-6 inline-flex items-center gap-2 rounded-2xl bg-accent px-6 py-3 font-bold text-accent_ink transition hover:brightness-95">
+            Add Money to Wallet
+            <i class="ri-arrow-right-line"></i>
+          </a>
+
+        </article>
+
+        <!-- SUPPORT CARD -->
+        <article class="rounded-3xl border border-line bg-white p-6 shadow-md sm:p-8">
+
+          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-soft text-3xl text-brand">
+            <i class="ri-customer-service-2-line"></i>
+          </div>
+
+          <h3 class="mt-5 font-head text-2xl font-extrabold text-ink">
+            Need Help?
+          </h3>
+
+          <p class="mt-3 leading-relaxed text-ink/70">
+            Contact our support team for assistance with customer applications,
+            document uploads or wallet payment.
+          </p>
+
+          <div class="mt-6 space-y-3">
+
+            <a href="tel:+919119480496" class="flex items-center gap-3 rounded-2xl bg-soft px-5 py-4 font-semibold text-brand transition hover:bg-line">
+              <i class="ri-phone-line text-xl"></i>
+              +91-9119480496
+            </a>
+
+            <a href="https://wa.me/919119480496" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 rounded-2xl border border-line px-5 py-4 font-semibold text-brand transition hover:bg-soft">
+              <i class="ri-whatsapp-line text-xl"></i>
+              WhatsApp Support
+            </a>
+
+            <a href="contact.html" class="flex items-center gap-3 rounded-2xl border border-line px-5 py-4 font-semibold text-brand transition hover:bg-soft">
+              <i class="ri-mail-line text-xl"></i>
+              Contact Us
+            </a>
+
+          </div>
+
+        </article>
+
+        <!-- DOCUMENT SECURITY CARD -->
+        <article class="rounded-3xl border border-line bg-soft p-6 sm:p-8">
+
+          <div class="flex items-center gap-3">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-2xl text-brand">
+              <i class="ri-shield-check-line"></i>
+            </div>
+            <h3 class="font-head text-xl font-bold text-ink">
+              Document Safety
+            </h3>
+          </div>
+
+          <p class="mt-4 text-sm leading-relaxed text-ink/70">
+            Always verify the uploaded files. Obtain customer permission before
+            submitting personal information or documents.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER - SAME AS INDEX -->
+<footer id="contact" class="bg-dark text-white" itemscope itemtype="https://schema.org/Organization">
+
+  <div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3 lg:px-8">
+
+    <!-- COMPANY -->
+    <div>
+
+      <img
+        src="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png"
+        alt="MAU'S GLOBAL logo"
+        width="160"
+        height="48"
+        loading="lazy"
+        class="h-12 w-auto rounded-lg bg-white p-1.5">
+
+      <p class="mt-4 max-w-sm text-white/80" itemprop="description">
+        We provide marketing, branding, and technology solutions, including digital marketing,
+        software development, and IT consultancy.
+      </p>
+
+    </div>
+
+    <!-- INFORMATION -->
+    <div>
+
+      <h3 class="font-head text-xl font-bold">Information</h3>
+
+      <address class="mt-4 space-y-3 not-italic text-white/85">
+
+        <p>
+          <span aria-hidden="true">☎</span>
+          <a href="tel:+919119480496" itemprop="telephone" class="underline-offset-4 hover:underline">
+            +91 911 948 0496
+          </a>
+        </p>
+
+        <p>
+          <span aria-hidden="true">✉</span>
+          <a href="mailto:mausglobalprivatelimited@gmail.com" itemprop="email" class="break-all underline-offset-4 hover:underline">
+            mausglobalprivatelimited@gmail.com
+          </a>
+        </p>
+
+        <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="streetAddress">L-1, Matoshree Nagar, Garkheda,</span><br>
+          <span itemprop="addressLocality">Chhatrapati Sambhajinagar</span>
+          <span itemprop="postalCode">431001</span><br>
+          <span itemprop="addressRegion">Maharashtra</span>,
+          <span itemprop="addressCountry">India</span>
+        </p>
+
+      </address>
+
+    </div>
+
+    <!-- FOLLOW US -->
+    <div>
+
+      <h3 class="font-head text-xl font-bold">Follow us</h3>
+
+      <ul class="mt-4 flex gap-3">
+
+        <li>
+          <a href="#" aria-label="Facebook" class="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-sm font-bold hover:bg-accent hover:text-accent_ink transition-colors">F</a>
+        </li>
+
+        <li>
+          <a href="#" aria-label="Instagram" class="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-sm font-bold hover:bg-accent hover:text-accent_ink transition-colors">I</a>
+        </li>
+
+        <li>
+          <a href="#" aria-label="LinkedIn" class="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-sm font-bold hover:bg-accent hover:text-accent_ink transition-colors">L</a>
+        </li>
+
+        <li>
+          <a href="#" aria-label="YouTube" class="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-sm font-bold hover:bg-accent hover:text-accent_ink transition-colors">Y</a>
+        </li>
+
+      </ul>
+
+      <a href="https://wa.me/919119480496" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex items-center gap-2 rounded-2xl bg-accent px-5 py-3 font-bold text-accent_ink transition hover:brightness-95">
+        <i class="ri-whatsapp-line text-xl"></i>
+        WhatsApp Us
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="border-t border-white/10 px-4 py-5 text-center text-sm text-white/70">
+    © 2026 MAU'S GLOBAL PRIVATE LIMITED. All Rights Reserved.
+  </div>
+
+</footer>
+
+<!-- FLOATING WHATSAPP - SAME STYLE AS INDEX -->
+<a href="https://wa.me/9191194800496"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Chat with MAU'S GLOBAL on WhatsApp"
+   class="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl transition hover:scale-105">
+
+  <svg class="h-8 w-8" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+    <path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-2c1.8 1 3.7 1.500 5.700 1.500 6.900 0 12.500-5.600 12.500-12.500S22.900 3 16 3zm6.800 17.700c-.3.800-1.700 1.500-2.300 1.600-.6.100-1.300.100-2.100-.1-.5-.2-1.100-.4-1.900-.7-3.300-1.400-5.400-4.800-5.600-5-.2-.2-1.300-1.700-1.300-3.200s.8-2.300 1.100-2.600c.3-.3.600-.4.800-.4h.6c.2 0 .5-.1.700.5.300.600.900 2.100 1 2.300.1.200.1.400 0 .6-.1.200-.2.400-.4.600l-.5.600c-.2.2-.3.4-.1.700.2.300.8 1.300 1.700 2.100 1.200 1 2.100 1.400 2.400 1.500.3.200.5.100.700-.1.200-.2.800-.9 1-1.300.2-.3.400-.3.700-.2.300.3 1.800.9 2.100 1 .3.200.5.200.6.400.1.100.1.800-.2 1.600z"/>
+  </svg>
+
+</a>
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+  const b = document.getElementById('menu-btn'), m = document.getElementById('mobile-menu');
+		b.addEventListener('click', () => { const o = m.classList.toggle('hidden') === false; b.setAttribute('aria-expanded', o); });
+		m.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { m.classList.add('hidden'); b.setAttribute('aria-expanded', 'false'); }));
+</script>
+
+</body>
+</html>
