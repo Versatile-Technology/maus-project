@@ -1,578 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plans & Pricing | MAU'S GLOBAL</title>
-    <meta name="description" content="Explore Silver, Gold, Platinum and Franchise plans offered by MAU'S GLOBAL. Choose a suitable plan for your business needs.">
-    <meta name="theme-color" content="#3B0F52">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
-
-    <style>
-        :root {
-            --primary: #5B1A7A;
-            --dark: #3B0F52;
-            --coral: #FF6B57;
-            --soft: #FFF1F3;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #FAF7FC;
-        }
-
-        .login-bg {
-            background: linear-gradient(135deg, #5B1A7A, #3B0F52);
-        }
-
-        .plan-card {
-            transition: all 0.3s ease;
-        }
-
-        .plan-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(59, 15, 82, 0.12);
-        }
-
-        .plan-btn {
-            background: linear-gradient(135deg, #5B1A7A, #3B0F52);
-        }
-
-        .plan-btn:hover {
-            background: #FF6B57;
-            color: #3B0F52;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plans | MAU'S GLOBAL</title>
+<meta name="description" content="Explore MAU'S GLOBAL Silver, Gold, Platinum and Franchise plans with one-year and two-year options for Career Hub, Education Desk, government schemes, Banking Point and more.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#3B0F52">
+<link rel="canonical" href="https://mausglobal.in/plans.html">
+<link rel="icon" href="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+<script>
+tailwind.config = {
+  theme: { extend: {
+    colors: { brand: "#5B1A7A", dark: "#3B0F52", accent: "#FF6B57", accent_ink: "#2B0A05",
+      soft: "#FFF1F3", ink: "#24102E", line: "#F6D5DD" },
+    fontFamily: { head: ['"Sora"', 'Hind', 'sans-serif'], sans: ['Hind', '"Noto Sans Devanagari"', 'system-ui', 'sans-serif'] }
+  } }
+};
+</script>
+<style>
+	body{font-family:Hind,"Noto Sans Devanagari",system-ui,sans-serif;background:#fff;color:#24102E}
+	:focus-visible{outline:3px solid #FF6B57;outline-offset:2px}
+	@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+	.ticker-track{animation:ticker 40s linear infinite}
+	.ticker:hover .ticker-track{animation-play-state:paused}
+	section[id]{scroll-margin-top:5rem}
+	@media(prefers-reduced-motion:reduce){.ticker-track{animation:none}html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"OfferCatalog",
+ "@id":"https://mausglobal.in/plans.html#plans",
+ "name":"MAU'S GLOBAL Pricing Plans",
+ "itemListElement":[
+  {"@type":"Offer","name":"Silver – 1 Year","price":"5500","priceCurrency":"INR","itemOffered":{"@type":"Service","name":"Silver plan (1 Year)","description":"Career Hub, Education Desk, Govt Schemes"}},
+  {"@type":"Offer","name":"Silver – 2 Year","price":"10500","priceCurrency":"INR","itemOffered":{"@type":"Service","name":"Silver plan (2 Year)","description":"Career Hub, Education Desk, Govt Schemes"}},
+  {"@type":"Offer","name":"Gold – 1 Year","price":"7500","priceCurrency":"INR","itemOffered":{"@type":"Service","name":"Gold plan (1 Year)","description":"Career Hub, Education Desk, Govt Schemes, Banking Point"}},
+  {"@type":"Offer","name":"Gold – 2 Year","price":"12500","priceCurrency":"INR","itemOffered":{"@type":"Service","name":"Gold plan (2 Year)","description":"Career Hub, Education Desk, Govt Schemes, Banking Point"}},
+  {"@type":"Offer","name":"Platinum – 1 Year","price":"10500","priceCurrency":"INR","itemOffered":{"@type":"Service","name":"Platinum plan (1 Year)","description":"Education Desk, Career Hub, Govt Schemes, Finance Corner, Others"}},
+  {"@type":"Offer","name":"Platinum – 2 Year","price":"18500","priceCurrency":"INR","itemOffered":{"@type":"Service","name":"Platinum plan (2 Year)","description":"Education Desk, Career Hub, Govt Schemes, Finance Corner, Others"}},
+  {"@type":"Offer","name":"Get Franchise – 1 Year","price":"60000","priceCurrency":"INR","itemOffered":{"@type":"Service","name":"Get Franchise plan (1 Year)","description":"Micro Store, Mini Store, Large Store"}},
+  {"@type":"Offer","name":"Get Franchise – 2 Year","price":"120000","priceCurrency":"INR","itemOffered":{"@type":"Service","name":"Get Franchise plan (2 Year)","description":"Micro Store, Mini Store, Large Store"}}
+ ]
+}
+</script>
 </head>
-
-<body>
-
-    <!-- NAVBAR -->
-    <header class="bg-white border-b border-purple-100">
-
-        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-
-            <a href="index.html" class="flex items-center gap-2" aria-label="MAU'S GLOBAL home">
-				<img
-					src="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png"
-					alt="MAU'S GLOBAL logo"
-					width="160"
-					height="48"
-					class="h-10 w-auto sm:h-12">
-			</a>
-
-            <a href="index.html"
-               class="text-sm font-semibold text-[#5B1A7A] hover:text-[#FF6B57]">
-
-                <i class="ri-arrow-left-line"></i>
-                Home
-
-            </a>
-
-        </nav>
-
-    </header>
-
-
-    <!-- PLANS SECTION -->
-    <main class="min-h-[85vh] flex items-center justify-center px-5 py-12">
-
-        <div class="max-w-6xl w-full grid md:grid-cols-2 bg-white rounded-3xl overflow-hidden shadow-xl border border-purple-100">
-
-
-            <!-- LEFT SIDE -->
-            <section class="login-bg flex flex-col justify-center p-10 md:p-12 relative overflow-hidden">
-
-                <div class="relative z-10">
-
-                    <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-white text-3xl mb-8">
-
-                        <i class="ri-vip-crown-line"></i>
-
-                    </div>
-
-                    <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight">
-
-                        Choose Your
-                        <span class="text-[#FF8B73]">Plan!</span>
-
-                    </h2>
-
-                    <p class="text-purple-100 mt-5 leading-7 text-sm">
-
-                        Discover the right membership plan for your business. Explore our Silver, Gold, Platinum and Franchise plans and choose the one that suits your requirements.
-
-                    </p>
-
-                    <div class="mt-10 space-y-5">
-
-                        <div class="flex items-center gap-4">
-
-                            <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center text-[#FF8B73] text-xl">
-                                <i class="ri-graduation-cap-line"></i>
-                            </div>
-
-                            <div>
-                                <h3 class="text-white font-semibold">
-                                    Education Desk
-                                </h3>
-
-                                <p class="text-purple-200 text-sm">
-                                    Education and career support
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        <div class="flex items-center gap-4">
-
-                            <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center text-[#FF8B73] text-xl">
-                                <i class="ri-government-line"></i>
-                            </div>
-
-                            <div>
-                                <h3 class="text-white font-semibold">
-                                    Government Schemes
-                                </h3>
-
-                                <p class="text-purple-200 text-sm">
-                                    Scheme-related assistance
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        <div class="flex items-center gap-4">
-
-                            <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center text-[#FF8B73] text-xl">
-                                <i class="ri-store-2-line"></i>
-                            </div>
-
-                            <div>
-                                <h3 class="text-white font-semibold">
-                                    Business Opportunities
-                                </h3>
-
-                                <p class="text-purple-200 text-sm">
-                                    Franchise options available
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="mt-10 border-t border-white/10 pt-6">
-
-                        <p class="text-purple-100 text-sm">
-
-                            Need help selecting a plan?
-
-                        </p>
-
-                        <a href="tel:+919119480496"
-                           class="inline-flex items-center gap-2 text-[#FF8B73] font-bold mt-3 hover:text-white transition">
-
-                            <i class="ri-phone-line"></i>
-                            +91 9119480496
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <!-- RIGHT SIDE -->
-            <section class="p-6 md:p-8 flex flex-col justify-center">
-
-                <div class="mb-6">
-
-                    <h2 class="text-2xl font-bold text-[#3B0F52]">
-                        Our Pricing Plans
-                    </h2>
-
-                    <p class="text-gray-500 text-sm mt-2">
-                        Select a plan according to your business requirements.
-                    </p>
-
-                </div>
-
-
-                <!-- PLANS GRID -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-
-
-                    <!-- SILVER PLAN -->
-                    <article class="plan-card border border-purple-100 rounded-2xl p-5 bg-white">
-
-                        <div class="flex justify-between items-center">
-
-                            <div class="w-10 h-10 rounded-xl bg-[#FFF1F3] flex items-center justify-center text-[#5B1A7A] text-xl">
-                                <i class="ri-medal-line"></i>
-                            </div>
-
-                            <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-3 py-1 rounded-full">
-                                Silver
-                            </span>
-
-                        </div>
-
-                        <h3 class="text-xl font-bold text-[#3B0F52] mt-4">
-                            Silver Plan
-                        </h3>
-
-                        <div class="mt-3 space-y-1">
-
-                            <p class="text-sm text-gray-500">
-                                1 Year
-                                <span class="float-right font-bold text-[#5B1A7A]">
-                                    ₹5,500
-                                </span>
-                            </p>
-
-                            <p class="text-sm text-gray-500">
-                                2 Years
-                                <span class="float-right font-bold text-[#5B1A7A]">
-                                    ₹10,500
-                                </span>
-                            </p>
-
-                        </div>
-
-                        <hr class="my-4 border-purple-100">
-
-                        <ul class="space-y-2 text-sm text-gray-600">
-
-                            <li>
-                                <i class="ri-check-line text-[#5B1A7A] mr-2"></i>
-                                Career Hub
-                            </li>
-
-                            <li>
-                                <i class="ri-check-line text-[#5B1A7A] mr-2"></i>
-                                Education Desk
-                            </li>
-
-                            <li>
-                                <i class="ri-check-line text-[#5B1A7A] mr-2"></i>
-                                Govt. Schemes
-                            </li>
-
-                        </ul>
-
-                        <a href="#"
-                           class="plan-btn block text-center text-white text-sm font-semibold py-3 rounded-xl mt-5 transition">
-
-                            Choose Plan
-
-                        </a>
-
-                    </article>
-
-
-                    <!-- GOLD PLAN -->
-                    <article class="plan-card border border-purple-100 rounded-2xl p-5 bg-white">
-
-                        <div class="flex justify-between items-center">
-
-                            <div class="w-10 h-10 rounded-xl bg-[#FFF1F3] flex items-center justify-center text-[#FF6B57] text-xl">
-                                <i class="ri-vip-crown-line"></i>
-                            </div>
-
-                            <span class="text-xs font-semibold bg-[#FFF1F3] text-[#5B1A7A] px-3 py-1 rounded-full">
-                                Gold
-                            </span>
-
-                        </div>
-
-                        <h3 class="text-xl font-bold text-[#3B0F52] mt-4">
-                            Gold Plan
-                        </h3>
-
-                        <div class="mt-3 space-y-1">
-
-                            <p class="text-sm text-gray-500">
-                                1 Year
-                                <span class="float-right font-bold text-[#5B1A7A]">
-                                    ₹7,500
-                                </span>
-                            </p>
-
-                            <p class="text-sm text-gray-500">
-                                2 Years
-                                <span class="float-right font-bold text-[#5B1A7A]">
-                                    ₹12,500
-                                </span>
-                            </p>
-
-                        </div>
-
-                        <hr class="my-4 border-purple-100">
-
-                        <ul class="space-y-2 text-sm text-gray-600">
-
-                            <li>
-                                <i class="ri-check-line text-[#5B1A7A] mr-2"></i>
-                                Career Hub
-                            </li>
-
-                            <li>
-                                <i class="ri-check-line text-[#5B1A7A] mr-2"></i>
-                                Education Desk
-                            </li>
-
-                            <li>
-                                <i class="ri-check-line text-[#5B1A7A] mr-2"></i>
-                                Govt. Schemes
-                            </li>
-
-                            <li>
-                                <i class="ri-check-line text-[#5B1A7A] mr-2"></i>
-                                Banking Point
-                            </li>
-
-                        </ul>
-
-                        <a href="#"
-                           class="plan-btn block text-center text-white text-sm font-semibold py-3 rounded-xl mt-5 transition">
-
-                            Choose Plan
-
-                        </a>
-
-                    </article>
-
-
-                    <!-- PLATINUM PLAN -->
-                    <article class="plan-card border border-purple-100 rounded-2xl p-5 bg-white">
-
-                        <div class="flex justify-between items-center">
-
-                            <div class="w-10 h-10 rounded-xl bg-[#FFF1F3] flex items-center justify-center text-[#5B1A7A] text-xl">
-                                <i class="ri-vip-diamond-line"></i>
-                            </div>
-
-                            <span class="text-xs font-semibold bg-[#3B0F52] text-white px-3 py-1 rounded-full">
-                                Platinum
-                            </span>
-
-                        </div>
-
-                        <h3 class="text-xl font-bold text-[#3B0F52] mt-4">
-                            Platinum Plan
-                        </h3>
-
-                        <div class="mt-3 space-y-1">
-
-                            <p class="text-sm text-gray-500">
-                                1 Year
-                                <span class="float-right font-bold text-[#5B1A7A]">
-                                    ₹10,500
-                                </span>
-                            </p>
-
-                            <p class="text-sm text-gray-500">
-                                2 Years
-                                <span class="float-right font-bold text-[#5B1A7A]">
-                                    ₹18,500
-                                </span>
-                            </p>
-
-                        </div>
-
-                        <hr class="my-4 border-purple-100">
-
-                        <ul class="space-y-2 text-sm text-gray-600">
-
-                            <li>
-                                <i class="ri-check-line text-[#5B1A7A] mr-2"></i>
-                                Education Desk
-                            </li>
-
-                            <li>
-                                <i class="ri-check-line text-[#5B1A7A] mr-2"></i>
-                                Career Hub
-                            </li>
-
-                            <li>
-                                <i class="ri-check-line text-[#5B1A7A] mr-2"></i>
-                                Govt. Schemes
-                            </li>
-
-                            <li>
-                                <i class="ri-check-line text-[#5B1A7A] mr-2"></i>
-                                Finance Corner
-                            </li>
-
-                            <li>
-                                <i class="ri-check-line text-[#5B1A7A] mr-2"></i>
-                                Others
-                            </li>
-
-                        </ul>
-
-                        <a href="#"
-                           class="plan-btn block text-center text-white text-sm font-semibold py-3 rounded-xl mt-5 transition">
-
-                            Choose Plan
-
-                        </a>
-
-                    </article>
-					<!-- Hero Plan -->
-					<article class="plan-card border border-purple-100 rounded-2xl p-5 bg-white">
-
-                        <div class="flex justify-between items-center">
-
-                            <div class="w-10 h-10 rounded-xl bg-[#FFF1F3] flex items-center justify-center text-[#5B1A7A] text-xl">
-                                <i class="ri-vip-diamond-line"></i>
-                            </div>
-
-                            <span class="text-xs font-semibold bg-[#3B0F52] text-white px-3 py-1 rounded-full">
-                                hero
-                            </span>
-
-                        </div>
-
-                        <h3 class="text-xl font-bold text-[#3B0F52] mt-4">
-                            Hero Plan
-                        </h3>
-
-                        <div class="mt-3 space-y-1">
-
-                            <p class="text-sm text-gray-500">
-                                1 Year
-                                <span class="float-right font-bold text-[#5B1A7A]">
-                                    ₹12,300
-                                </span>
-                            </p>
-
-                            <p class="text-sm text-gray-500">
-                                2 Years
-                                <span class="float-right font-bold text-[#5B1A7A]">
-                                    ₹89,999
-                                </span>
-                            </p>
-
-                        </div>
-
-                        <hr class="my-4 border-purple-100">
-
-                        <ul class="space-y-2 text-sm text-gray-600">
-
-                            <li>
-                                <i class="ri-check-line text-[#5B1A7A] mr-2"></i>
-                                Online
-                            </li>
-                        </ul>
-
-                        <a href="#"
-                           class="plan-btn block text-center text-white text-sm font-semibold py-3 rounded-xl mt-5 transition">
-
-                            Choose Plan
-
-                        </a>
-
-                    </article>
-
-
-                    <!-- FRANCHISE PLAN -->
-                    <article class="plan-card border border-purple-100 rounded-2xl p-5 bg-white">
-
-                        <div class="flex justify-between items-center">
-
-                            <div class="w-10 h-10 rounded-xl bg-[#FFF1F3] flex items-center justify-center text-[#FF6B57] text-xl">
-                                <i class="ri-store-3-line"></i>
-                            </div>
-
-                            <span class="text-xs font-semibold bg-[#FFF1F3] text-[#5B1A7A] px-3 py-1 rounded-full">
-                                Franchise
-                            </span>
-
-                        </div>
-
-                        <h3 class="text-xl font-bold text-[#3B0F52] mt-4">
-                            Get Franchise
-                        </h3>
-
-                        <div class="mt-3 space-y-1">
-
-                            <p class="text-sm text-gray-500">
-                                1 Year
-                                <span class="float-right font-bold text-[#5B1A7A]">
-                                    ₹60,000
-                                </span>
-                            </p>
-
-                            <p class="text-sm text-gray-500">
-                                2 Years
-                                <span class="float-right font-bold text-[#5B1A7A]">
-                                    ₹1,20,000
-                                </span>
-                            </p>
-
-                        </div>
-
-                        <hr class="my-4 border-purple-100">
-
-                        <ul class="space-y-2 text-sm text-gray-600">
-
-                            <li>
-                                <i class="ri-check-line text-[#5B1A7A] mr-2"></i>
-                                Three Types Available
-                            </li>
-
-                            <li>
-                                <i class="ri-check-line text-[#5B1A7A] mr-2"></i>
-                                Micro Store
-                            </li>
-
-                            <li>
-                                <i class="ri-check-line text-[#5B1A7A] mr-2"></i>
-                                Mini Store
-                            </li>
-
-                            <li>
-                                <i class="ri-check-line text-[#5B1A7A] mr-2"></i>
-                                Large Store
-                            </li>
-
-                        </ul>
-
-                        <a href="#"
-                           class="plan-btn block text-center text-white text-sm font-semibold py-3 rounded-xl mt-5 transition">
-
-                            Choose Plan
-
-                        </a>
-
-                    </article>
-
-                </div>
-
-            </section>
-
-        </div>
-
-    </main>
-
-
-    <!-- FOOTER -->
-    <footer class="py-5 text-center text-sm text-gray-500">
-
-        © 2026 MAU'S GLOBAL. All Rights Reserved.
-
-    </footer>
-
+<body class="antialiased">
+<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-accent focus:px-4 focus:py-2 focus:font-bold focus:text-accent_ink">Skip to content</a>
+
+<!-- Scheme / notice ticker -->
+<div class="ticker overflow-hidden bg-dark text-white" role="region" aria-label="Government scheme updates" lang="mr">
+ <div class="ticker-track flex w-max whitespace-nowrap py-2 text-sm font-medium">
+  <span class="px-4">आंबेडकर शिक्षणवृत्ती योजना - मागासवर्गीय विद्यार्थ्यांसाठी आर्थिक मदत &nbsp;•&nbsp; प्रधानमंत्री रोजगार निर्मिती कार्यक्रम &nbsp;•&nbsp; आंबेडकर शिक्षणवृत्ती योजना - मागासवर्गीय विद्यार्थ्यांसाठी आर्थिक मदत &nbsp;•&nbsp; प्रधानमंत्री रोजगार निर्मिती कार्यक्रम &nbsp;•&nbsp;</span>
+  <span class="px-4" aria-hidden="true">आंबेडकर शिक्षणवृत्ती योजना - मागासवर्गीय विद्यार्थ्यांसाठी आर्थिक मदत &nbsp;•&nbsp; प्रधानमंत्री रोजगार निर्मिती कार्यक्रम &nbsp;•&nbsp; आंबेडकर शिक्षणवृत्ती योजना - मागासवर्गीय विद्यार्थ्यांसाठी आर्थिक मदत &nbsp;•&nbsp; प्रधानमंत्री रोजगार निर्मिती कार्यक्रम &nbsp;•&nbsp;</span>
+ </div>
+</div>
+
+<header class="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur" id="home">
+ <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+  <a href="index.html" class="flex items-center gap-2" aria-label="MAU'S GLOBAL home">
+   <img src="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png" alt="MAU'S GLOBAL logo" width="160" height="48" class="h-10 w-auto sm:h-12">
+  </a>
+  <nav class="hidden items-center gap-1 lg:flex" aria-label="Primary">
+   <a href="services.html" class="rounded-lg px-3 py-2 text-sm font-semibold text-ink/80 hover:bg-soft hover:text-brand transition-colors">Services</a>
+   <a href="contact.html" class="rounded-lg px-3 py-2 text-sm font-semibold text-ink/80 hover:bg-soft hover:text-brand transition-colors">Contact Us</a>
+   <a href="about.html" class="rounded-lg px-3 py-2 text-sm font-semibold text-ink/80 hover:bg-soft hover:text-brand transition-colors">About Us</a>
+   <a href="apply-hear.html" class="rounded-lg px-3 py-2 text-sm font-semibold text-ink/80 hover:bg-soft hover:text-brand transition-colors">Apply Here</a>
+   <a href="plans.html" aria-current="page" class="rounded-lg bg-soft px-3 py-2 text-sm font-semibold text-brand">Plans</a>
+  </nav>
+  <div class="flex items-center gap-2">
+   <a href="tel:+919119480496" class="hidden flex-col text-right text-sm font-semibold leading-tight text-brand hover:text-dark xl:flex"><span class="text-[11px] font-medium text-ink/60">Helpline</span>+91-9119480496</a>
+   <a href="login.html" class="rounded-2xl bg-accent px-4 py-2 text-sm font-bold text-accent_ink transition hover:brightness-95">Login</a>
+   <button id="menu-btn" type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-line text-brand lg:hidden" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle menu">
+    <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+   </button>
+  </div>
+ </div>
+ <div id="mobile-menu" class="hidden border-t border-line bg-white px-4 py-3 lg:hidden">
+  <nav class="grid gap-1" aria-label="Mobile primary">
+   <a href="services.html" class="rounded-lg px-3 py-2 font-semibold text-ink/80 hover:bg-soft hover:text-brand">Services</a>
+   <a href="contact.html" class="rounded-lg px-3 py-2 font-semibold text-ink/80 hover:bg-soft hover:text-brand">Contact Us</a>
+   <a href="about.html" class="rounded-lg px-3 py-2 font-semibold text-ink/80 hover:bg-soft hover:text-brand">About Us</a>
+   <a href="#" class="rounded-lg px-3 py-2 font-semibold text-ink/80 hover:bg-soft hover:text-brand">Apply Here</a>
+   <a href="plans.html" class="rounded-lg bg-soft px-3 py-2 font-semibold text-brand">Plans</a>
+   <a href="tel:+919119480496" class="rounded-lg px-3 py-2 font-semibold text-brand">Helpline: +91-9119480496</a>
+  </nav>
+ </div>
+</header>
+
+<main id="main-content">
+<!-- HERO -->
+<section class="relative overflow-hidden bg-gradient-to-br from-dark via-brand to-[#7D2C91] py-16 text-white sm:py-20" aria-labelledby="hero-title">
+ <div class="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-accent/20 blur-3xl" aria-hidden="true"></div>
+ <div class="absolute -bottom-24 -left-20 h-72 w-72 rounded-full bg-white/10 blur-3xl" aria-hidden="true"></div>
+ <div class="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
+  <p class="mb-4 inline-flex rounded-full border border-white/25 bg-white/10 px-4 py-2 text-sm font-semibold">MAU'S GLOBAL • Pricing & Membership</p>
+  <h1 id="hero-title" class="font-head text-3xl font-extrabold sm:text-5xl">Choose The Right <span class="text-accent">Plan</span></h1>
+  <p class="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-white/85">Explore our available plans and select a one-year or two-year option that suits your needs.</p>
+  <a href="#plans" class="mt-8 inline-flex items-center gap-2 rounded-2xl bg-accent px-6 py-3 font-bold text-accent_ink transition hover:brightness-95">Explore Plans <i class="ri-arrow-down-line"></i></a>
+ </div>
+</section>
+
+<!-- PLANS -->
+<section id="plans" class="bg-soft py-16 sm:py-20" aria-labelledby="plans-title">
+ <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-3xl text-center">
+   <p class="font-bold uppercase tracking-[.18em] text-brand">Our Pricing</p>
+   <h2 id="plans-title" class="mt-3 font-head text-3xl font-extrabold text-ink sm:text-4xl">Membership Plans</h2>
+   <p class="mt-4 text-lg leading-relaxed text-ink/75">Plan details and prices are displayed below. Contact our team for assistance with choosing a plan.</p>
+  </div>
+  <div class="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+   <!-- SILVER -->
+   <article class="flex flex-col rounded-3xl border border-line bg-white p-6 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl" aria-labelledby="plan-silver">
+    <div class="flex items-center justify-between gap-3"><h3 id="plan-silver" class="font-head text-2xl font-extrabold text-brand">Silver</h3><span class="rounded-full bg-soft px-3 py-1 text-xs font-bold text-brand">Basic</span></div>
+    <dl class="mt-5 space-y-2 text-ink">
+     <div class="flex items-baseline justify-between gap-2"><dt class="text-sm text-ink/70">1 Year</dt><dd class="text-2xl font-extrabold">₹5,500</dd></div>
+     <div class="flex items-baseline justify-between gap-2"><dt class="text-sm text-ink/70">2 Year</dt><dd class="text-2xl font-extrabold">₹10,500</dd></div>
+    </dl>
+    <hr class="my-5 border-line">
+    <p class="mb-3 text-sm font-bold text-ink/70">Included services</p>
+    <ul class="flex-1 space-y-3 text-[15px] text-ink/85">
+     <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill mt-0.5 text-brand"></i><span>Career Hub</span></li>
+     <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill mt-0.5 text-brand"></i><span>Education Desk</span></li>
+     <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill mt-0.5 text-brand"></i><span>Govt. Schemes</span></li>
+    </ul>
+    <div class="mt-6 grid gap-2">
+     <a href="#" class="rounded-2xl bg-brand px-4 py-3 text-center text-sm font-bold text-white transition hover:bg-dark">Buy 1 Year</a>
+     <a href="#" class="rounded-2xl border-2 border-brand px-4 py-3 text-center text-sm font-bold text-brand transition hover:bg-brand hover:text-white">Buy 2 Year</a>
+    </div>
+   </article>
+   <!-- GOLD -->
+   <article class="relative flex flex-col rounded-3xl border-2 border-accent bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl" aria-labelledby="plan-gold">
+    <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent px-4 py-1 text-xs font-extrabold text-accent_ink">POPULAR</span>
+    <div class="flex items-center justify-between gap-3"><h3 id="plan-gold" class="font-head text-2xl font-extrabold text-brand">Gold</h3><span class="rounded-full bg-soft px-3 py-1 text-xs font-bold text-brand">Plus</span></div>
+    <dl class="mt-5 space-y-2 text-ink">
+     <div class="flex items-baseline justify-between gap-2"><dt class="text-sm text-ink/70">1 Year</dt><dd class="text-2xl font-extrabold">₹7,500</dd></div>
+     <div class="flex items-baseline justify-between gap-2"><dt class="text-sm text-ink/70">2 Year</dt><dd class="text-2xl font-extrabold">₹12,500</dd></div>
+    </dl>
+    <hr class="my-5 border-line">
+    <p class="mb-3 text-sm font-bold text-ink/70">Included services</p>
+    <ul class="flex-1 space-y-3 text-[15px] text-ink/85">
+     <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill mt-0.5 text-brand"></i><span>Career Hub</span></li>
+     <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill mt-0.5 text-brand"></i><span>Education Desk</span></li>
+     <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill mt-0.5 text-brand"></i><span>Govt. Schemes</span></li>
+     <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill mt-0.5 text-brand"></i><span>Banking Point</span></li>
+    </ul>
+    <div class="mt-6 grid gap-2">
+     <a href="#" class="rounded-2xl bg-brand px-4 py-3 text-center text-sm font-bold text-white transition hover:bg-dark">Buy 1 Year</a>
+     <a href="#" class="rounded-2xl border-2 border-brand px-4 py-3 text-center text-sm font-bold text-brand transition hover:bg-brand hover:text-white">Buy 2 Year</a>
+    </div>
+   </article>
+   <!-- PLATINUM -->
+   <article class="flex flex-col rounded-3xl border border-line bg-white p-6 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl" aria-labelledby="plan-platinum">
+    <div class="flex items-center justify-between gap-3"><h3 id="plan-platinum" class="font-head text-2xl font-extrabold text-brand">Platinum</h3><span class="rounded-full bg-soft px-3 py-1 text-xs font-bold text-brand">Premium</span></div>
+    <dl class="mt-5 space-y-2 text-ink">
+     <div class="flex items-baseline justify-between gap-2"><dt class="text-sm text-ink/70">1 Year</dt><dd class="text-2xl font-extrabold">₹10,500</dd></div>
+     <div class="flex items-baseline justify-between gap-2"><dt class="text-sm text-ink/70">2 Year</dt><dd class="text-2xl font-extrabold">₹18,500</dd></div>
+    </dl>
+    <hr class="my-5 border-line">
+    <p class="mb-3 text-sm font-bold text-ink/70">Included services</p>
+    <ul class="flex-1 space-y-3 text-[15px] text-ink/85">
+     <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill mt-0.5 text-brand"></i><span>Education Desk</span></li>
+     <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill mt-0.5 text-brand"></i><span>Career Hub</span></li>
+     <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill mt-0.5 text-brand"></i><span>Govt. Schemes</span></li>
+     <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill mt-0.5 text-brand"></i><span>Finance Corner</span></li>
+     <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill mt-0.5 text-brand"></i><span>Others</span></li>
+    </ul>
+    <div class="mt-6 grid gap-2">
+     <a href="#" class="rounded-2xl bg-brand px-4 py-3 text-center text-sm font-bold text-white transition hover:bg-dark">Buy 1 Year</a>
+     <a href="#" class="rounded-2xl border-2 border-brand px-4 py-3 text-center text-sm font-bold text-brand transition hover:bg-brand hover:text-white">Buy 2 Year</a>
+    </div>
+   </article>
+   <!-- FRANCHISE -->
+   <article class="flex flex-col rounded-3xl border border-line bg-white p-6 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl" aria-labelledby="plan-franchise">
+    <div class="flex items-center justify-between gap-3"><h3 id="plan-franchise" class="font-head text-2xl font-extrabold text-brand">Get Franchise</h3><span class="rounded-full bg-soft px-3 py-1 text-xs font-bold text-brand">Business</span></div>
+    <dl class="mt-5 space-y-2 text-ink">
+     <div class="flex items-baseline justify-between gap-2"><dt class="text-sm text-ink/70">1 Year</dt><dd class="text-2xl font-extrabold">₹60,000</dd></div>
+     <div class="flex items-baseline justify-between gap-2"><dt class="text-sm text-ink/70">2 Year</dt><dd class="text-2xl font-extrabold">₹1,20,000</dd></div>
+    </dl>
+    <hr class="my-5 border-line">
+    <p class="mb-3 text-sm font-bold text-ink/70">Franchise options</p>
+    <ul class="flex-1 space-y-3 text-[15px] text-ink/85">
+     <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill mt-0.5 text-brand"></i><span>Three Types Of Franchise Available</span></li>
+     <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill mt-0.5 text-brand"></i><span>Micro Store</span></li>
+     <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill mt-0.5 text-brand"></i><span>Mini Store</span></li>
+     <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill mt-0.5 text-brand"></i><span>Large Store</span></li>
+    </ul>
+    <div class="mt-6 grid gap-2">
+     <a href="#" class="rounded-2xl bg-brand px-4 py-3 text-center text-sm font-bold text-white transition hover:bg-dark">Buy 1 Year</a>
+     <a href="#" class="rounded-2xl border-2 border-brand px-4 py-3 text-center text-sm font-bold text-brand transition hover:bg-brand hover:text-white">Buy 2 Year</a>
+    </div>
+   </article>
+  </div>
+  <p class="mx-auto mt-8 max-w-3xl text-center text-sm leading-relaxed text-ink/70">For plan selection, service availability, or additional details, please contact MAU'S GLOBAL through the Contact Us page or helpline.</p>
+ </div>
+</section>
+
+<!-- SECTORS -->
+<section id="sectors" class="bg-white py-16 sm:py-20" aria-labelledby="sectors-title">
+ <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+  <h2 id="sectors-title" class="text-center font-head text-3xl font-extrabold text-ink sm:text-4xl">Explore Opportunities In Various Sectors</h2>
+  <div class="mt-10 grid gap-6 md:grid-cols-3">
+   <figure class="group overflow-hidden rounded-3xl border border-line bg-white shadow-sm">
+    <div class="aspect-[4/3] overflow-hidden"><img src="https://mausglobal.in/assets/img3-B4qsu8eu.png" alt="Income certificate financial documents" width="640" height="480" loading="lazy" decoding="async" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"></div>
+    <figcaption class="p-5"><h3 class="font-head text-xl font-bold text-ink">Income Certificate</h3><p class="mt-1 text-ink/75">Verify income for scholarships and loans</p></figcaption>
+   </figure>
+   <figure class="group overflow-hidden rounded-3xl border border-line bg-white shadow-sm">
+    <div class="aspect-[4/3] overflow-hidden"><img src="https://mausglobal.in/assets/img1-CBRPbGtK.png" alt="People working together in an office" width="640" height="480" loading="lazy" decoding="async" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"></div>
+    <figcaption class="p-5"><h3 class="font-head text-xl font-bold text-ink">Domicile Certificate</h3><p class="mt-1 text-ink/75">Proof of residence for state benefits</p></figcaption>
+   </figure>
+   <figure class="group overflow-hidden rounded-3xl border border-line bg-white shadow-sm">
+    <div class="aspect-[4/3] overflow-hidden"><img src="https://mausglobal.in/assets/img2-BQJoLnbI.png" alt="Documents being reviewed for an application" width="640" height="480" loading="lazy" decoding="async" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"></div>
+    <figcaption class="p-5"><h3 class="font-head text-xl font-bold text-ink">Caste Certificate</h3><p class="mt-1 text-ink/75">Required for education and job reservations</p></figcaption>
+   </figure>
+  </div>
+ </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="bg-soft py-16 sm:py-20" aria-labelledby="how-title">
+ <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+  <h2 id="how-title" class="text-center font-head text-3xl font-extrabold text-ink sm:text-4xl">How It Works</h2>
+  <ol class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+   <li class="rounded-3xl border border-line bg-white p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"><span class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-accent text-2xl font-bold text-accent_ink" aria-hidden="true">♙</span><h3 class="mt-4 font-head text-lg font-bold text-ink">Sign Up Or Login</h3></li>
+   <li class="rounded-3xl border border-line bg-white p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"><span class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-accent text-2xl font-bold text-accent_ink" aria-hidden="true">☷</span><h3 class="mt-4 font-head text-lg font-bold text-ink">Select Service</h3></li>
+   <li class="rounded-3xl border border-line bg-white p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"><span class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-accent text-2xl font-bold text-accent_ink" aria-hidden="true">▤</span><h3 class="mt-4 font-head text-lg font-bold text-ink">Fill Form & Upload Documents</h3></li>
+   <li class="rounded-3xl border border-line bg-white p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"><span class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-accent text-2xl font-bold text-accent_ink" aria-hidden="true">↓</span><h3 class="mt-4 font-head text-lg font-bold text-ink">Track & Download Certificate</h3></li>
+  </ol>
+ </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="bg-white py-16 sm:py-20" aria-labelledby="about-title">
+ <div class="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+  <h2 id="about-title" class="font-head text-3xl font-extrabold text-ink sm:text-4xl">About MAU'S GLOBAL</h2>
+  <div class="mt-6 space-y-4 text-lg leading-relaxed text-ink/80">
+   <p>We provide marketing, branding, and technology solutions, including digital marketing, software development, and IT consultancy.</p>
+   <p>Our services also include assistance with government certificate applications, education-related schemes, business registration and licence services. Service availability and eligibility depend on the relevant department and applicable rules.</p>
+  </div>
+  <a class="mt-4 inline-block text-lg font-bold text-brand transition hover:scale-105 hover:text-dark" href="about.html">Read More <i class="ri-arrow-right-line"></i></a>
+ </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="bg-soft py-16 sm:py-20" aria-labelledby="faq-title">
+ <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+  <h2 id="faq-title" class="text-center font-head text-3xl font-extrabold text-ink sm:text-4xl">Frequently Asked Questions</h2>
+  <div class="mb-2 mt-8 space-y-3">
+   <details class="group rounded-3xl border border-line bg-white p-5 open:shadow-md" open>
+    <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-head text-lg font-bold text-ink"><span>What services are available through MAU'S GLOBAL?</span><span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-soft text-brand transition-transform group-open:rotate-45" aria-hidden="true">+</span></summary>
+    <p class="mt-3 leading-relaxed text-ink/80">The listed services include assistance with government certificates and schemes, IT services, registration and licence services, marketing and graphic designing.</p>
+   </details>
+   <details class="group rounded-3xl border border-line bg-white p-5 open:shadow-md">
+    <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-head text-lg font-bold text-ink"><span>How can I apply for a certificate?</span><span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-soft text-brand transition-transform group-open:rotate-45" aria-hidden="true">+</span></summary>
+    <p class="mt-3 leading-relaxed text-ink/80">Sign up or log in, select the required service, complete the form and upload the documents requested for that service.</p>
+   </details>
+   <details class="group rounded-3xl border border-line bg-white p-5 open:shadow-md">
+    <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-head text-lg font-bold text-ink"><span>Does MAU'S GLOBAL issue government certificates?</span><span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-soft text-brand transition-transform group-open:rotate-45" aria-hidden="true">+</span></summary>
+    <p class="mt-3 leading-relaxed text-ink/80">Certificate approval and issuance are handled by the relevant government authority. Confirm the exact service process before applying.</p>
+   </details>
+  </div>
+  <a class="ml-5 text-lg font-bold text-brand transition hover:text-dark" href="questions.html">Read More <i class="ri-arrow-right-line"></i></a>
+ </div>
+</section>
+</main>
+
+<!-- FOOTER / CONTACT -->
+<footer id="contact" class="bg-dark text-white" itemscope itemtype="https://schema.org/Organization">
+ <div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3 lg:px-8">
+  <div>
+   <img src="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png" alt="MAU'S GLOBAL logo" width="160" height="48" loading="lazy" class="h-12 w-auto rounded-lg bg-white p-1.5">
+   <p class="mt-4 max-w-sm text-white/80" itemprop="description">We provide marketing, branding, and technology solutions, including digital marketing, software development, and IT consultancy.</p>
+  </div>
+  <div>
+   <h2 class="font-head text-xl font-bold">Information</h2>
+   <address class="mt-4 space-y-3 not-italic text-white/85">
+    <p>☎ <a href="tel:+919119480496" itemprop="telephone" class="underline-offset-4 hover:underline">+91 911 948 0496</a></p>
+    <p>✉ <a href="mailto:mausglobalprivatelimited@gmail.com" itemprop="email" class="break-all underline-offset-4 hover:underline">mausglobalprivatelimited@gmail.com</a></p>
+    <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><span itemprop="streetAddress">L-1, Matoshree Nagar, Garkheda,</span><br><span itemprop="addressLocality">Chhatrapati Sambhajinagar</span> <span itemprop="postalCode">431001</span><br><span itemprop="addressRegion">Maharashtra</span>, <span itemprop="addressCountry">India</span></p>
+   </address>
+  </div>
+  <div>
+   <h2 class="font-head text-xl font-bold">Follow us</h2>
+   <ul class="mt-4 flex gap-3">
+    <li><a href="#" aria-label="Facebook" class="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-sm font-bold transition hover:bg-accent hover:text-accent_ink">F</a></li>
+    <li><a href="#" aria-label="Instagram" class="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-sm font-bold transition hover:bg-accent hover:text-accent_ink">I</a></li>
+    <li><a href="#" aria-label="LinkedIn" class="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-sm font-bold transition hover:bg-accent hover:text-accent_ink">L</a></li>
+    <li><a href="#" aria-label="YouTube" class="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-sm font-bold transition hover:bg-accent hover:text-accent_ink">Y</a></li>
+   </ul>
+   <a href="tel:+919119480496" class="mt-6 inline-block rounded-2xl bg-accent px-5 py-3 font-bold text-accent_ink transition hover:brightness-95">Call Helpline</a>
+  </div>
+ </div>
+ <div class="border-t border-white/15 py-5 text-center text-sm text-white/70">
+  <p>© 2026 mausglobal - All Rights Reserved</p>
+  <p class="mt-1">Developed By :- Versatile Technology</p>
+ </div>
+</footer>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/919119480496" target="_blank" rel="noopener" aria-label="Chat with MAU'S GLOBAL on WhatsApp" class="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl transition hover:scale-105">
+ <svg class="h-8 w-8" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-2c1.8 1 3.7 1.500 5.700 1.500 6.900 0 12.500-5.600 12.500-12.500S22.900 3 16 3zm6.800 17.700c-.3.800-1.700 1.500-2.300 1.600-.6.100-1.300.100-2.100-.1-.5-.2-1.100-.4-1.900-.7-3.300-1.400-5.400-4.800-5.600-5-.2-.2-1.300-1.700-1.300-3.200s.8-2.300 1.100-2.600c.3-.3.600-.4.800-.4h.6c.2 0 .5-.1.700.5.300.600.900 2.100 1 2.300.1.200.1.400 0 .6-.1.200-.2.400-.4.600l-.5.600c-.2.200-.3.400-.1.700.2.300.8 1.300 1.700 2.100 1.200 1 2.100 1.400 2.400 1.500.3.200.5.100.700-.1.200-.2.800-.9 1-1.300.2-.3.400-.3.700-.2.300.1 1.800.9 2.100 1 .3.200.5.200.6.400.1.100.1.800-.2 1.600z"/></svg>
+</a>
+
+<script>
+const b=document.getElementById('menu-btn'),m=document.getElementById('mobile-menu');
+b.addEventListener('click',()=>{const open=m.classList.toggle('hidden')===false;b.setAttribute('aria-expanded',open);});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.add('hidden');b.setAttribute('aria-expanded','false');}));
+</script>
 </body>
 </html>
