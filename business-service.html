@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore MAU'S GLOBAL business services including GST registration, 12A, 80G, DSC, trademark registration, IT registration, marketing and design solutions.">
+    <meta name="keywords" content="GST Registration, 12A Registration, 80G Registration, DSC, Trademark, IT Registration, Marketing, Design Services">
+	<link rel="icon" href="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png">
+    <title>Business Services | MAU'S GLOBAL</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+		<script>
+	tailwind.config = {
+	theme: { extend: {
+    colors: { brand: "#5B1A7A", dark: "#3B0F52", accent: "#FF6B57", accent_ink: "#2B0A05",
+              soft: "#FFF1F3", ink: "#24102E", line: "#F6D5DD" },
+    fontFamily: { head: ['"Sora"', 'Hind', 'sans-serif'], sans: ['Hind', '"Noto Sans Devanagari"', 'system-ui', 'sans-serif'] }
+  } }
+};
+</script>
+    <style>
+        :root {
+            --primary: #5B1A7A;
+            --dark: #3B0F52;
+            --coral: #FF6B57;
+            --soft: #FFF1F3;
+            --bg: #FAF7FC;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg);
+            font-family: Arial, sans-serif;
+        }
+
+        .main-btn {
+            background: var(--primary);
+            transition: .3s;
+        }
+
+        .main-btn:hover {
+            background: var(--dark);
+            transform: translateY(-2px);
+        }
+
+        .service-card {
+            transition: .3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(59,15,82,.09);
+        }
+
+        .service-icon {
+            background: var(--soft);
+            color: var(--coral);
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg,#5B1A7A,#3B0F52);
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(91,26,122,.08);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+   <header class="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur" id="home">
+
+  <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+
+    <a href="index.html" class="flex items-center gap-2" aria-label="MAU'S GLOBAL home">
+      <img
+        src="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png"
+        alt="MAU'S GLOBAL logo"
+        width="160"
+        height="48"
+        class="h-10 w-auto sm:h-12">
+    </a>
+
+    <nav class="hidden items-center gap-1 lg:flex" aria-label="Primary">
+      <a href="services.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Services</a>
+      <a href="contact.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Contact Us</a>
+      <a href="about.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">About Us</a>
+      <a href="apply-hear.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Apply Here</a>
+      <a href="plans.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Plans</a>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <a href="tel:+919119480496" class="hidden xl:flex flex-col text-right leading-tight text-sm font-semibold text-brand hover:text-dark">
+        <span class="text-[11px] font-medium text-ink/60">Helpline</span>
+        +91-9119480496
+      </a>
+
+      <a href="login.html" class="rounded-2xl bg-accent px-4 py-2 text-sm font-bold text-accent_ink hover:brightness-95 transition">
+        Login
+      </a>
+
+      <button id="menu-btn" type="button"
+        class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-line text-brand lg:hidden"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Toggle menu">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="hidden border-t border-line bg-white px-4 pb-4 lg:hidden">
+    <nav aria-label="Mobile">
+      <a href="services.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Services</a>
+      <a href="contact.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Contact Us</a>
+      <a href="about.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">About Us</a>
+      <a href="apply-hear.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Apply Here</a>
+      <a href="plans.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Plans</a>
+
+      <a href="tel:+919119480496" class="mt-2 block rounded-lg bg-soft px-4 py-3 font-semibold text-brand">
+        Helpline +91-9119480496
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+    <!-- Hero Section -->
+    <section class="hero-bg px-6 py-20 md:py-24">
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+            <div>
+
+                <span class="inline-block bg-white/10 text-pink-200
+                             px-4 py-2 rounded-full text-xs font-bold
+                             tracking-widest uppercase mb-6">
+                    Professional Business Solutions
+                </span>
+
+                <h1 class="text-4xl md:text-6xl font-bold
+                           text-white leading-tight mb-6">
+                    Complete Business
+                    <span style="color:#FF9A89">Services</span>
+                    Under One Roof
+                </h1>
+
+                <p class="text-purple-100 leading-8 text-sm md:text-base mb-8">
+                    Simplify your business journey with our professional
+                    registration, compliance, certification, marketing
+                    and design services. Get the right assistance to
+                    manage and grow your business.
+                </p>
+
+                <div class="flex flex-wrap gap-4">
+
+                    <a href="#services"
+                       class="bg-white px-7 py-4 rounded-xl font-bold"
+                       style="color:var(--primary)">
+                        Explore Services
+                        <i class="ri-arrow-right-line ml-2"></i>
+                    </a>
+
+                    <a href="#enquiry"
+                       class="border border-white/40 text-white
+                              px-7 py-4 rounded-xl font-semibold
+                              hover:bg-white/10">
+                        Submit Enquiry
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="relative">
+
+                <div class="bg-white/10 border border-white/20
+                            rounded-3xl p-8 md:p-10">
+
+                    <div class="grid grid-cols-2 gap-5">
+
+                        <div class="bg-white rounded-2xl p-6">
+                            <i class="ri-file-list-3-line text-3xl"
+                               style="color:var(--coral)"></i>
+                            <h3 class="font-bold mt-4"
+                                style="color:var(--dark)">
+                                Registrations
+                            </h3>
+                            <p class="text-xs text-gray-500 mt-2">
+                                Business documentation
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-6">
+                            <i class="ri-shield-check-line text-3xl"
+                               style="color:var(--coral)"></i>
+                            <h3 class="font-bold mt-4"
+                                style="color:var(--dark)">
+                                Compliance
+                            </h3>
+                            <p class="text-xs text-gray-500 mt-2">
+                                Business assistance
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-6">
+                            <i class="ri-megaphone-line text-3xl"
+                               style="color:var(--coral)"></i>
+                            <h3 class="font-bold mt-4"
+                                style="color:var(--dark)">
+                                Marketing
+                            </h3>
+                            <p class="text-xs text-gray-500 mt-2">
+                                Business promotion
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-6">
+                            <i class="ri-palette-line text-3xl"
+                               style="color:var(--coral)"></i>
+                            <h3 class="font-bold mt-4"
+                                style="color:var(--dark)">
+                                Designing
+                            </h3>
+                            <p class="text-xs text-gray-500 mt-2">
+                                Creative solutions
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Introduction -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+
+        <div class="max-w-3xl mx-auto text-center">
+
+            <span class="text-xs font-bold uppercase tracking-widest"
+                  style="color:var(--coral)">
+                What We Offer
+            </span>
+
+            <h2 class="text-3xl md:text-4xl font-bold mt-4 mb-5"
+                style="color:var(--dark)">
+                Everything Your Business Needs
+            </h2>
+
+            <p class="text-gray-500 leading-8 text-sm md:text-base">
+                From essential registrations and documentation to
+                digital marketing and creative design, explore our
+                range of business services designed to support
+                businesses, entrepreneurs and organisations.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Business Services -->
+    <section id="services" class="max-w-7xl mx-auto px-6 pb-20">
+
+        <div class="flex flex-col md:flex-row justify-between
+                    md:items-end gap-5 mb-10">
+
+            <div>
+                <span class="text-xs font-bold uppercase tracking-widest"
+                      style="color:var(--coral)">
+                    Our Business Services
+                </span>
+
+                <h2 class="text-3xl font-bold mt-3"
+                    style="color:var(--dark)">
+                    Explore Our Services
+                </h2>
+            </div>
+
+            <p class="text-gray-500 text-sm max-w-md leading-7">
+                Choose the service you need and submit an enquiry
+                to get further information.
+            </p>
+
+        </div>
+
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+
+
+            <!-- GST -->
+            <div class="service-card bg-white rounded-2xl p-7 border border-purple-100">
+
+                <div class="service-icon w-16 h-16 rounded-2xl
+                            flex items-center justify-center mb-6">
+                    <i class="ri-file-text-line text-3xl"></i>
+                </div>
+
+                <span class="text-xs font-bold uppercase tracking-wider"
+                      style="color:var(--coral)">
+                    Taxation & Registration
+                </span>
+
+                <h3 class="text-xl font-bold mt-3 mb-3"
+                    style="color:var(--dark)">
+                    GST Services
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-7 mb-7">
+                    Get assistance with GST registration,
+                    documentation and related GST compliance
+                    requirements for your business.
+                </p>
+
+                <a href="#"
+                   class="font-bold text-sm"
+                   style="color:var(--primary)">
+                    View Details
+                    <i class="ri-arrow-right-line ml-1"></i>
+                </a>
+
+            </div>
+
+
+            <!-- 12A -->
+            <div class="service-card bg-white rounded-2xl p-7 border border-purple-100">
+
+                <div class="service-icon w-16 h-16 rounded-2xl
+                            flex items-center justify-center mb-6">
+                    <i class="ri-government-line text-3xl"></i>
+                </div>
+
+                <span class="text-xs font-bold uppercase tracking-wider"
+                      style="color:var(--coral)">
+                    NGO Registration
+                </span>
+
+                <h3 class="text-xl font-bold mt-3 mb-3"
+                    style="color:var(--dark)">
+                    12A Registration
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-7 mb-7">
+                    Get professional assistance with the applicable
+                    income tax registration process for eligible
+                    charitable and non-profit organisations.
+                </p>
+
+                <a href="#"
+                   class="font-bold text-sm"
+                   style="color:var(--primary)">
+                    View Details
+                    <i class="ri-arrow-right-line ml-1"></i>
+                </a>
+
+            </div>
+
+
+            <!-- 80G -->
+            <div class="service-card bg-white rounded-2xl p-7 border border-purple-100">
+
+                <div class="service-icon w-16 h-16 rounded-2xl
+                            flex items-center justify-center mb-6">
+                    <i class="ri-hand-heart-line text-3xl"></i>
+                </div>
+
+                <span class="text-xs font-bold uppercase tracking-wider"
+                      style="color:var(--coral)">
+                    NGO & Tax Benefits
+                </span>
+
+                <h3 class="text-xl font-bold mt-3 mb-3"
+                    style="color:var(--dark)">
+                    80G Registration
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-7 mb-7">
+                    Assistance with 80G approval applications
+                    and documentation for eligible charitable
+                    organisations.
+                </p>
+
+                <a href="#"
+                   class="font-bold text-sm"
+                   style="color:var(--primary)">
+                    View Details
+                    <i class="ri-arrow-right-line ml-1"></i>
+                </a>
+
+            </div>
+
+
+            <!-- DSC -->
+            <div class="service-card bg-white rounded-2xl p-7 border border-purple-100">
+
+                <div class="service-icon w-16 h-16 rounded-2xl
+                            flex items-center justify-center mb-6">
+                    <i class="ri-shield-keyhole-line text-3xl"></i>
+                </div>
+
+                <span class="text-xs font-bold uppercase tracking-wider"
+                      style="color:var(--coral)">
+                    Digital Authentication
+                </span>
+
+                <h3 class="text-xl font-bold mt-3 mb-3"
+                    style="color:var(--dark)">
+                    Digital Signature (DSC)
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-7 mb-7">
+                    Get assistance with Digital Signature
+                    Certificates for eligible online business,
+                    government and documentation processes.
+                </p>
+
+                <a href="#"
+                   class="font-bold text-sm"
+                   style="color:var(--primary)">
+                    View Details
+                    <i class="ri-arrow-right-line ml-1"></i>
+                </a>
+
+            </div>
+
+
+            <!-- Trademark -->
+            <div class="service-card bg-white rounded-2xl p-7 border border-purple-100">
+
+                <div class="service-icon w-16 h-16 rounded-2xl
+                            flex items-center justify-center mb-6">
+                    <i class="ri-registered-line text-3xl"></i>
+                </div>
+
+                <span class="text-xs font-bold uppercase tracking-wider"
+                      style="color:var(--coral)">
+                    Brand Protection
+                </span>
+
+                <h3 class="text-xl font-bold mt-3 mb-3"
+                    style="color:var(--dark)">
+                    Trademark Registration
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-7 mb-7">
+                    Assistance with trademark searches,
+                    applications and documentation to help
+                    protect your brand identity.
+                </p>
+
+                <a href="#"
+                   class="font-bold text-sm"
+                   style="color:var(--primary)">
+                    View Details
+                    <i class="ri-arrow-right-line ml-1"></i>
+                </a>
+
+            </div>
+
+
+            <!-- IT Registration -->
+            <div class="service-card bg-white rounded-2xl p-7 border border-purple-100">
+
+                <div class="service-icon w-16 h-16 rounded-2xl
+                            flex items-center justify-center mb-6">
+                    <i class="ri-computer-line text-3xl"></i>
+                </div>
+
+                <span class="text-xs font-bold uppercase tracking-wider"
+                      style="color:var(--coral)">
+                    Business Documentation
+                </span>
+
+                <h3 class="text-xl font-bold mt-3 mb-3"
+                    style="color:var(--dark)">
+                    IT Registration
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-7 mb-7">
+                    Get assistance with applicable IT-related
+                    registrations, documentation and business
+                    compliance requirements.
+                </p>
+
+                <a href="#"
+                   class="font-bold text-sm"
+                   style="color:var(--primary)">
+                    View Details
+                    <i class="ri-arrow-right-line ml-1"></i>
+                </a>
+
+            </div>
+
+
+            <!-- Marketing -->
+            <div class="service-card bg-white rounded-2xl p-7 border border-purple-100">
+
+                <div class="service-icon w-16 h-16 rounded-2xl
+                            flex items-center justify-center mb-6">
+                    <i class="ri-megaphone-line text-3xl"></i>
+                </div>
+
+                <span class="text-xs font-bold uppercase tracking-wider"
+                      style="color:var(--coral)">
+                    Business Growth
+                </span>
+
+                <h3 class="text-xl font-bold mt-3 mb-3"
+                    style="color:var(--dark)">
+                    Marketing Services
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-7 mb-7">
+                    Promote your business with digital marketing,
+                    social media management and brand
+                    communication solutions.
+                </p>
+
+                <a href="#"
+                   class="font-bold text-sm"
+                   style="color:var(--primary)">
+                    View Details
+                    <i class="ri-arrow-right-line ml-1"></i>
+                </a>
+
+            </div>
+
+
+            <!-- Design -->
+            <div class="service-card bg-white rounded-2xl p-7 border border-purple-100">
+
+                <div class="service-icon w-16 h-16 rounded-2xl
+                            flex items-center justify-center mb-6">
+                    <i class="ri-palette-line text-3xl"></i>
+                </div>
+
+                <span class="text-xs font-bold uppercase tracking-wider"
+                      style="color:var(--coral)">
+                    Creative Solutions
+                </span>
+
+                <h3 class="text-xl font-bold mt-3 mb-3"
+                    style="color:var(--dark)">
+                    Design Services
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-7 mb-7">
+                    Build a strong visual identity with creative
+                    graphics, branding, promotional materials
+                    and design solutions.
+                </p>
+
+                <a href="#"
+                   class="font-bold text-sm"
+                   style="color:var(--primary)">
+                    View Details
+                    <i class="ri-arrow-right-line ml-1"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Why Choose Us -->
+    <section class="py-20 px-6"
+             style="background:var(--soft)">
+
+        <div class="max-w-7xl mx-auto">
+
+            <div class="text-center max-w-2xl mx-auto mb-12">
+
+                <span class="text-xs font-bold uppercase tracking-widest"
+                      style="color:var(--coral)">
+                    Why MAU'S GLOBAL
+                </span>
+
+                <h2 class="text-3xl md:text-4xl font-bold mt-4"
+                    style="color:var(--dark)">
+                    Your Business, Our Support
+                </h2>
+
+                <p class="text-gray-500 mt-4 leading-7">
+                    Get access to a range of business services
+                    through one convenient platform.
+                </p>
+
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="bg-white p-7 rounded-2xl">
+                    <i class="ri-stack-line text-3xl"
+                       style="color:var(--coral)"></i>
+                    <h3 class="font-bold mt-4"
+                        style="color:var(--dark)">
+                        Multiple Services
+                    </h3>
+                    <p class="text-gray-500 text-sm mt-3 leading-6">
+                        Access different business solutions
+                        from one platform.
+                    </p>
+                </div>
+
+                <div class="bg-white p-7 rounded-2xl">
+                    <i class="ri-customer-service-2-line text-3xl"
+                       style="color:var(--coral)"></i>
+                    <h3 class="font-bold mt-4"
+                        style="color:var(--dark)">
+                        Customer Assistance
+                    </h3>
+                    <p class="text-gray-500 text-sm mt-3 leading-6">
+                        Get assistance with your service
+                        related enquiries.
+                    </p>
+                </div>
+
+                <div class="bg-white p-7 rounded-2xl">
+                    <i class="ri-file-shield-2-line text-3xl"
+                       style="color:var(--coral)"></i>
+                    <h3 class="font-bold mt-4"
+                        style="color:var(--dark)">
+                        Documentation Support
+                    </h3>
+                    <p class="text-gray-500 text-sm mt-3 leading-6">
+                        Understand the documents and
+                        information required.
+                    </p>
+                </div>
+
+                <div class="bg-white p-7 rounded-2xl">
+                    <i class="ri-user-heart-line text-3xl"
+                       style="color:var(--coral)"></i>
+                    <h3 class="font-bold mt-4"
+                        style="color:var(--dark)">
+                        Convenient Enquiry
+                    </h3>
+                    <p class="text-gray-500 text-sm mt-3 leading-6">
+                        Submit your requirements through
+                        a simple enquiry form.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Enquiry Section -->
+    <section id="enquiry" class="max-w-7xl mx-auto px-6 py-20">
+
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
+
+            <!-- Left Content -->
+            <div class="pt-5">
+
+                <span class="text-xs font-bold uppercase tracking-widest"
+                      style="color:var(--coral)">
+                    Let's Get Started
+                </span>
+
+                <h2 class="text-3xl md:text-4xl font-bold mt-4 mb-6"
+                    style="color:var(--dark)">
+                    Enquire About Our Business Services
+                </h2>
+
+                <p class="text-gray-500 leading-8 mb-8">
+                    Looking for professional business assistance?
+                    Tell us about your requirements. Our team can
+                    contact you with relevant service information.
+                </p>
+
+                <div class="space-y-6">
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl flex items-center
+                                    justify-center"
+                             style="background:var(--soft);color:var(--coral)">
+                            <i class="ri-file-list-3-line text-2xl"></i>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold"
+                                style="color:var(--dark)">
+                                Choose Your Service
+                            </h4>
+                            <p class="text-gray-500 text-sm mt-1">
+                                Select the service you require.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl flex items-center
+                                    justify-center"
+                             style="background:var(--soft);color:var(--coral)">
+                            <i class="ri-user-line text-2xl"></i>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold"
+                                style="color:var(--dark)">
+                                Share Your Details
+                            </h4>
+                            <p class="text-gray-500 text-sm mt-1">
+                                Provide your basic contact information.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl flex items-center
+                                    justify-center"
+                             style="background:var(--soft);color:var(--coral)">
+                            <i class="ri-customer-service-line text-2xl"></i>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold"
+                                style="color:var(--dark)">
+                                Get Assistance
+                            </h4>
+                            <p class="text-gray-500 text-sm mt-1">
+                                Our team can follow up on your enquiry.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Enquiry Form -->
+            <div class="bg-white p-7 md:p-10 rounded-3xl
+                        border border-purple-100 shadow-sm">
+
+                <h3 class="text-2xl font-bold mb-2"
+                    style="color:var(--dark)">
+                    Submit Your Enquiry
+                </h3>
+
+                <p class="text-gray-500 text-sm mb-8">
+                    Fill in the details below.
+                </p>
+
+                <form action="#" method="POST" class="space-y-5">
+
+                    <div>
+                        <label class="block text-sm font-semibold
+                                      text-gray-700 mb-2">
+                            Full Name *
+                        </label>
+
+                        <input type="text" name="name"
+                               placeholder="Enter your full name"
+                               required
+                               class="w-full border border-purple-100
+                                      rounded-xl px-4 py-3">
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-5">
+
+                        <div>
+                            <label class="block text-sm font-semibold
+                                          text-gray-700 mb-2">
+                                Email Address *
+                            </label>
+
+                            <input type="email" name="email"
+                                   placeholder="Enter email"
+                                   required
+                                   class="w-full border border-purple-100
+                                          rounded-xl px-4 py-3">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold
+                                          text-gray-700 mb-2">
+                                Mobile Number *
+                            </label>
+
+                            <input type="tel" name="mobile"
+                                   placeholder="Enter mobile number"
+                                   required
+                                   class="w-full border border-purple-100
+                                          rounded-xl px-4 py-3">
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold
+                                      text-gray-700 mb-2">
+                            Select Business Service *
+                        </label>
+
+                        <select name="service" required
+                                class="w-full border border-purple-100
+                                       rounded-xl px-4 py-3 bg-white text-gray-600">
+
+                            <option value="">Choose a service</option>
+                            <option value="GST">GST Services</option>
+                            <option value="12A">12A Registration</option>
+                            <option value="80G">80G Registration</option>
+                            <option value="DSC">Digital Signature (DSC)</option>
+                            <option value="Trademark">Trademark Registration</option>
+                            <option value="IT">IT Registration</option>
+                            <option value="Marketing">Marketing Services</option>
+                            <option value="Design">Design Services</option>
+
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold
+                                      text-gray-700 mb-2">
+                            Business / Organisation Name
+                        </label>
+
+                        <input type="text" name="business"
+                               placeholder="Enter business name"
+                               class="w-full border border-purple-100
+                                      rounded-xl px-4 py-3">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold
+                                      text-gray-700 mb-2">
+                            Your Requirements *
+                        </label>
+
+                        <textarea name="message" rows="4"
+                                  placeholder="Tell us about your requirements..."
+                                  required
+                                  class="w-full border border-purple-100
+                                         rounded-xl px-4 py-3 resize-none"></textarea>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <input type="checkbox" required
+                               class="mt-1 accent-purple-800">
+
+                        <p class="text-xs text-gray-500 leading-6">
+                            I agree to the
+                            <a href="privacy-policy.html"
+                               class="font-semibold underline"
+                               style="color:var(--primary)">
+                                Privacy Policy
+                            </a>
+                            and consent to being contacted regarding
+                            my enquiry.
+                        </p>
+                    </div>
+
+                    <button type="submit"
+                            class="main-btn w-full text-white
+                                   py-4 rounded-xl font-bold">
+                        Submit Enquiry
+                        <i class="ri-arrow-right-line ml-2"></i>
+                    </button>
+
+                    <p class="text-xs text-center text-gray-400">
+                        Your information will be handled according
+                        to our privacy policy.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="px-6 pb-20">
+
+        <div class="max-w-7xl mx-auto hero-bg rounded-3xl
+                    p-9 md:p-14 text-center">
+
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-5">
+                Ready to Grow Your Business?
+            </h2>
+
+            <p class="text-purple-100 max-w-2xl mx-auto
+                      text-sm leading-7 mb-8">
+                Explore our business services and connect with
+                MAU'S GLOBAL to discuss your requirements.
+            </p>
+
+            <a href="#enquiry"
+               class="inline-block bg-white px-8 py-4 rounded-xl
+                      font-bold"
+               style="color:var(--primary)">
+                Send An Enquiry
+                <i class="ri-arrow-right-line ml-2"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-purple-100">
+
+        <div class="max-w-7xl mx-auto px-6 py-12">
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                <div>
+                    <a href="index.html"
+                       class="text-2xl font-bold"
+                       style="color:var(--primary)">
+                        MAU'S <span style="color:var(--coral)">GLOBAL</span>
+                    </a>
+
+                    <p class="text-gray-500 text-sm leading-7 mt-5">
+                        Your business partner for professional
+                        services, registrations and creative solutions.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-5"
+                        style="color:var(--dark)">
+                        Quick Links
+                    </h3>
+
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-5"
+                        style="color:var(--dark)">
+                        Business Services
+                    </h3>
+
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="gst.html">GST Services</a></li>
+                        <li><a href="12a.html">12A Registration</a></li>
+                        <li><a href="80g.html">80G Registration</a></li>
+                        <li><a href="dsc.html">Digital Signature</a></li>
+                        <li><a href="trademark.html">Trademark</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-5"
+                        style="color:var(--dark)">
+                        More Information
+                    </h3>
+
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="marketing.html">Marketing</a></li>
+                        <li><a href="design.html">Design Services</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="contact.html">Support</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="border-t border-purple-100 mt-10 pt-7
+                        text-center text-xs text-gray-400">
+
+                © 2026 MAU'S GLOBAL. All rights reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

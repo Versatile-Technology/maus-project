@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search and explore MAU'S GLOBAL services, franchise opportunities and business solutions.">
+    <meta name="robots" content="noindex, follow">
+	<link rel="icon" href="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png">
+    <title>Search Results | MAU'S GLOBAL</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+	<script>
+tailwind.config = {
+  theme: { extend: {
+    colors: { brand: "#5B1A7A", dark: "#3B0F52", accent: "#FF6B57", accent_ink: "#2B0A05",
+              soft: "#FFF1F3", ink: "#24102E", line: "#F6D5DD" },
+    fontFamily: { head: ['"Sora"', 'Hind', 'sans-serif'], sans: ['Hind', '"Noto Sans Devanagari"', 'system-ui', 'sans-serif'] }
+  } }
+};
+</script>
+    <style>
+        :root {
+            --primary: #5B1A7A;
+            --dark: #3B0F52;
+            --coral: #FF6B57;
+            --soft: #FFF1F3;
+            --bg: #FAF7FC;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg);
+            font-family: Arial, sans-serif;
+        }
+
+        .main-btn {
+            background: var(--primary);
+            transition: .3s;
+        }
+
+        .main-btn:hover {
+            background: var(--dark);
+        }
+
+        .service-card {
+            transition: .3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(59,15,82,.09);
+        }
+
+        .search-box:focus-within {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(91,26,122,.08);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur" id="home">
+
+  <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+
+    <a href="index.html" class="flex items-center gap-2" aria-label="MAU'S GLOBAL home">
+      <img
+        src="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png"
+        alt="MAU'S GLOBAL logo"
+        width="160"
+        height="48"
+        class="h-10 w-auto sm:h-12">
+    </a>
+
+    <nav class="hidden items-center gap-1 lg:flex" aria-label="Primary">
+      <a href="services.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Services</a>
+      <a href="contact.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Contact Us</a>
+      <a href="about.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">About Us</a>
+      <a href="apply-hear.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Apply Here</a>
+      <a href="plans.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Plans</a>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <a href="tel:+919119480496" class="hidden xl:flex flex-col text-right leading-tight text-sm font-semibold text-brand hover:text-dark">
+        <span class="text-[11px] font-medium text-ink/60">Helpline</span>
+        +91-9119480496
+      </a>
+
+      <a href="login.html" class="rounded-2xl bg-accent px-4 py-2 text-sm font-bold text-accent_ink hover:brightness-95 transition">
+        Login
+      </a>
+
+      <button id="menu-btn" type="button"
+        class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-line text-brand lg:hidden"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Toggle menu">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="hidden border-t border-line bg-white px-4 pb-4 lg:hidden">
+    <nav aria-label="Mobile">
+      <a href="services.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Services</a>
+      <a href="contact.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Contact Us</a>
+      <a href="about.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">About Us</a>
+      <a href="apply-hear.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Apply Here</a>
+      <a href="plans.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Plans</a>
+
+      <a href="tel:+919119480496" class="mt-2 block rounded-lg bg-soft px-4 py-3 font-semibold text-brand">
+        Helpline +91-9119480496
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+    <!-- Search Hero -->
+    <section class="px-5 py-16"
+        style="background:linear-gradient(135deg,#5B1A7A,#3B0F52)">
+
+        <div class="max-w-4xl mx-auto text-center">
+
+            <p class="text-sm uppercase tracking-widest text-pink-200 mb-4">
+                Discover Our Services
+            </p>
+
+            <h1 class="text-3xl md:text-5xl font-bold text-white mb-5">
+                Find What You're
+                <span style="color:#FF9A89">Looking For</span>
+            </h1>
+
+            <p class="text-purple-100 leading-7 max-w-2xl mx-auto mb-9">
+                Explore our services and discover the right
+                business opportunities and solutions for your needs.
+            </p>
+
+            <!-- Search Form -->
+            <form action="search.html" method="GET"
+                  class="search-box bg-white rounded-2xl p-2 flex items-center
+                         border-2 border-transparent max-w-2xl mx-auto">
+
+                <i class="ri-search-line text-2xl ml-3"
+                   style="color:var(--primary)"></i>
+
+                <input
+                    type="search"
+                    name="q"
+                    placeholder="Search services, categories..."
+                    class="w-full px-4 py-3 outline-none text-gray-700 bg-transparent"
+                    aria-label="Search services"
+                >
+
+                <button type="submit"
+                    class="main-btn text-white px-6 py-3 rounded-xl font-semibold">
+                    Search
+                </button>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+
+        <div class="flex flex-col sm:flex-row justify-between
+                    sm:items-center gap-4 mb-10">
+
+            <div>
+                <h2 class="text-2xl font-bold"
+                    style="color:var(--dark)">
+                    Search Results
+                </h2>
+
+                <p class="text-gray-500 text-sm mt-2">
+                    Explore our available services and opportunities.
+                </p>
+            </div>
+
+            <a href="services.html"
+               class="text-sm font-semibold hover:underline"
+               style="color:var(--primary)">
+                View All Services
+                <i class="ri-arrow-right-line"></i>
+            </a>
+
+        </div>
+
+        <!-- Service Cards -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+
+            <!-- Micro Store -->
+            <div class="service-card bg-white rounded-2xl p-7 border border-purple-100">
+
+                <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
+                     style="background:var(--soft);color:var(--coral)">
+                    <i class="ri-store-2-line text-3xl"></i>
+                </div>
+
+                <span class="text-xs font-bold uppercase tracking-wider"
+                      style="color:var(--coral)">
+                    Franchise
+                </span>
+
+                <h3 class="text-xl font-bold mt-3 mb-3"
+                    style="color:var(--dark)">
+                    Micro Store
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-7 mb-6">
+                    Explore a compact business opportunity designed
+                    for individuals looking to start small.
+                </p>
+
+                <a href="micro-store.html"
+                   class="font-semibold text-sm text-purple-800">
+                    Explore Service
+                    <i class="ri-arrow-right-line ml-1"></i>
+                </a>
+
+            </div>
+
+            <!-- Mini Store -->
+            <div class="service-card bg-white rounded-2xl p-7 border border-purple-100">
+
+                <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
+                     style="background:var(--soft);color:var(--coral)">
+                    <i class="ri-shopping-bag-3-line text-3xl"></i>
+                </div>
+
+                <span class="text-xs font-bold uppercase tracking-wider"
+                      style="color:var(--coral)">
+                    Franchise
+                </span>
+
+                <h3 class="text-xl font-bold mt-3 mb-3"
+                    style="color:var(--dark)">
+                    Mini Store
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-7 mb-6">
+                    Discover a flexible retail business model
+                    with opportunities for business growth.
+                </p>
+
+                <a href="mini-store.html"
+                   class="font-semibold text-sm text-purple-800">
+                    Explore Service
+                    <i class="ri-arrow-right-line ml-1"></i>
+                </a>
+
+            </div>
+
+            <!-- Large Store -->
+            <div class="service-card bg-white rounded-2xl p-7 border border-purple-100">
+
+                <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
+                     style="background:var(--soft);color:var(--coral)">
+                    <i class="ri-building-4-line text-3xl"></i>
+                </div>
+
+                <span class="text-xs font-bold uppercase tracking-wider"
+                      style="color:var(--coral)">
+                    Franchise
+                </span>
+
+                <h3 class="text-xl font-bold mt-3 mb-3"
+                    style="color:var(--dark)">
+                    Large Store
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-7 mb-6">
+                    Explore a larger retail business opportunity
+                    for ambitious entrepreneurs.
+                </p>
+
+                <a href="large-store.html"
+                   class="font-semibold text-sm text-purple-800">
+                    Explore Service
+                    <i class="ri-arrow-right-line ml-1"></i>
+                </a>
+
+            </div>
+
+            <!-- Business Support -->
+            <div class="service-card bg-white rounded-2xl p-7 border border-purple-100">
+
+                <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
+                     style="background:var(--soft);color:var(--coral)">
+                    <i class="ri-customer-service-2-line text-3xl"></i>
+                </div>
+
+                <span class="text-xs font-bold uppercase tracking-wider"
+                      style="color:var(--coral)">
+                    Business Support
+                </span>
+
+                <h3 class="text-xl font-bold mt-3 mb-3"
+                    style="color:var(--dark)">
+                    Business Support
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-7 mb-6">
+                    Get assistance and guidance for your
+                    business-related requirements.
+                </p>
+
+                <a href="contact.html"
+                   class="font-semibold text-sm text-purple-800">
+                    Explore Service
+                    <i class="ri-arrow-right-line ml-1"></i>
+                </a>
+
+            </div>
+
+            <!-- Franchise Enquiry -->
+            <div class="service-card bg-white rounded-2xl p-7 border border-purple-100">
+
+                <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
+                     style="background:var(--soft);color:var(--coral)">
+                    <i class="ri-file-list-3-line text-3xl"></i>
+                </div>
+
+                <span class="text-xs font-bold uppercase tracking-wider"
+                      style="color:var(--coral)">
+                    Get Started
+                </span>
+
+                <h3 class="text-xl font-bold mt-3 mb-3"
+                    style="color:var(--dark)">
+                    Franchise Enquiry
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-7 mb-6">
+                    Submit your enquiry and learn more about
+                    available franchise opportunities.
+                </p>
+
+                <a href="franchise.html"
+                   class="font-semibold text-sm text-purple-800">
+                    Explore Service
+                    <i class="ri-arrow-right-line ml-1"></i>
+                </a>
+
+            </div>
+
+            <!-- Customer Assistance -->
+            <div class="service-card bg-white rounded-2xl p-7 border border-purple-100">
+
+                <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
+                     style="background:var(--soft);color:var(--coral)">
+                    <i class="ri-headphone-line text-3xl"></i>
+                </div>
+
+                <span class="text-xs font-bold uppercase tracking-wider"
+                      style="color:var(--coral)">
+                    Customer Care
+                </span>
+
+                <h3 class="text-xl font-bold mt-3 mb-3"
+                    style="color:var(--dark)">
+                    Customer Assistance
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-7 mb-6">
+                    Connect with our team for queries,
+                    assistance and general information.
+                </p>
+
+                <a href="contact.html"
+                   class="font-semibold text-sm text-purple-800">
+                    Contact Us
+                    <i class="ri-arrow-right-line ml-1"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Empty State Design -->
+        <div class="bg-white rounded-3xl border border-purple-100
+                    text-center py-16 px-6 mt-12">
+
+            <div class="w-24 h-24 rounded-full flex items-center
+                        justify-center mx-auto mb-6"
+                 style="background:var(--soft);color:var(--coral)">
+
+                <i class="ri-search-eye-line text-5xl"></i>
+
+            </div>
+
+            <h3 class="text-2xl font-bold mb-3"
+                style="color:var(--dark)">
+                No Results Found
+            </h3>
+
+            <p class="text-gray-500 max-w-md mx-auto leading-7 mb-7">
+                We couldn't find any services matching your search.
+                Try using different keywords or check your spelling.
+            </p>
+
+            <a href="services.html"
+               class="main-btn text-white px-7 py-3 rounded-xl
+                      font-semibold inline-flex items-center">
+                <i class="ri-refresh-line mr-2"></i>
+                Browse All Services
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Help Section -->
+    <section class="px-6 pb-16">
+        <div class="max-w-7xl mx-auto rounded-3xl p-8 md:p-12
+                    flex flex-col md:flex-row justify-between
+                    items-center gap-7"
+             style="background:var(--soft)">
+
+            <div>
+                <h2 class="text-2xl font-bold mb-3"
+                    style="color:var(--dark)">
+                    Still Can't Find What You Need?
+                </h2>
+
+                <p class="text-gray-600 text-sm leading-7">
+                    Our team is here to help you find the right service.
+                </p>
+            </div>
+
+            <a href="contact.html"
+               class="main-btn text-white px-7 py-3 rounded-xl font-semibold">
+                Contact Our Team
+                <i class="ri-arrow-right-line ml-2"></i>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-purple-100">
+        <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col
+                    md:flex-row justify-between items-center gap-4">
+
+            <a href="index.html" class="text-xl font-bold"
+               style="color:var(--primary)">
+                MAU'S <span style="color:var(--coral)">GLOBAL</span>
+            </a>
+
+            <p class="text-sm text-gray-400">
+                © 2026 MAU'S GLOBAL. All rights reserved.
+            </p>
+
+            <div class="flex gap-5 text-sm text-gray-500">
+                <a href="leagal-page.html">Privacy</a>
+                <a href="leagal-page.html">Terms</a>
+                <a href="leagal-page.html">Contact</a>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
