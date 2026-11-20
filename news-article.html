@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read business news, important alerts, announcements and official updates on MAU'S GLOBAL.">
+    <meta name="robots" content="index, follow">
+    <title>News Article | MAU'S GLOBAL</title>
+	<link rel="icon" href="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+<script>
+	tailwind.config = {
+	theme: { extend: {
+    colors: { brand: "#5B1A7A", dark: "#3B0F52", accent: "#FF6B57", accent_ink: "#2B0A05",
+              soft: "#FFF1F3", ink: "#24102E", line: "#F6D5DD" },
+    fontFamily: { head: ['"Sora"', 'Hind', 'sans-serif'], sans: ['Hind', '"Noto Sans Devanagari"', 'system-ui', 'sans-serif'] }
+  } }
+};
+</script>
+    <style>
+        :root {
+            --primary: #5B1A7A;
+            --dark: #3B0F52;
+            --coral: #FF6B57;
+            --soft: #FFF1F3;
+            --bg: #FAF7FC;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg);
+            font-family: Arial, sans-serif;
+        }
+
+        .main-btn {
+            background: var(--primary);
+            transition: .3s;
+        }
+
+        .main-btn:hover {
+            background: var(--dark);
+            transform: translateY(-2px);
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg,#5B1A7A,#3B0F52);
+        }
+
+        .article-content p {
+            line-height: 2;
+            color: #6b7280;
+            margin-bottom: 22px;
+        }
+
+        .article-content h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+
+        .article-content h3 {
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+ <header class="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur" id="home">
+
+  <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+
+    <a href="index.html" class="flex items-center gap-2" aria-label="MAU'S GLOBAL home">
+      <img
+        src="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png"
+        alt="MAU'S GLOBAL logo"
+        width="160"
+        height="48"
+        class="h-10 w-auto sm:h-12">
+    </a>
+
+    <nav class="hidden items-center gap-1 lg:flex" aria-label="Primary">
+      <a href="services.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Services</a>
+      <a href="contact.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Contact Us</a>
+      <a href="about.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">About Us</a>
+      <a href="apply-hear.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Apply Here</a>
+      <a href="plans.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Plans</a>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <a href="tel:+919119480496" class="hidden xl:flex flex-col text-right leading-tight text-sm font-semibold text-brand hover:text-dark">
+        <span class="text-[11px] font-medium text-ink/60">Helpline</span>
+        +91-9119480496
+      </a>
+
+      <a href="login.html" class="rounded-2xl bg-accent px-4 py-2 text-sm font-bold text-accent_ink hover:brightness-95 transition">
+        Login
+      </a>
+
+      <button id="menu-btn" type="button"
+        class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-line text-brand lg:hidden"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Toggle menu">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="hidden border-t border-line bg-white px-4 pb-4 lg:hidden">
+    <nav aria-label="Mobile">
+      <a href="services.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Services</a>
+      <a href="contact.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Contact Us</a>
+      <a href="about.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">About Us</a>
+      <a href="apply-hear.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Apply Here</a>
+      <a href="plans.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Plans</a>
+
+      <a href="tel:+919119480496" class="mt-2 block rounded-lg bg-soft px-4 py-3 font-semibold text-brand">
+        Helpline +91-9119480496
+      </a>
+    </nav>
+  </div>
+</header>
+
+    <!-- Article Header -->
+    <section class="hero-bg px-6 py-16 md:py-20">
+
+        <div class="max-w-4xl mx-auto">
+
+            <a href="news.html"
+               class="text-purple-200 text-sm hover:text-white inline-flex items-center mb-8">
+                <i class="ri-arrow-left-line mr-2"></i>
+                Back to News
+            </a>
+
+            <div class="flex flex-wrap gap-2 mb-6">
+
+                <span class="text-xs font-bold px-3 py-1.5 rounded-full
+                             text-white"
+                      style="background:var(--coral)">
+                    NEW
+                </span>
+
+                <span class="text-xs font-bold px-3 py-1.5 rounded-full
+                             bg-white/10 text-pink-100">
+                    Business Update
+                </span>
+
+                <span class="text-xs font-bold px-3 py-1.5 rounded-full
+                             bg-white/10 text-pink-100">
+                    TODAY
+                </span>
+
+            </div>
+
+            <h1 class="text-3xl md:text-5xl font-bold text-white leading-tight mb-6">
+                Important Business News, Updates and Announcements
+            </h1>
+
+            <p class="text-purple-100 leading-8 max-w-3xl">
+                Stay informed about relevant announcements,
+                business information, registrations and important
+                updates from reliable and official sources.
+            </p>
+
+            <div class="flex flex-wrap gap-5 mt-8 text-sm text-purple-200">
+
+                <span>
+                    <i class="ri-calendar-line mr-2"></i>
+                    Published: 20 November 2026
+                </span>
+
+                <span>
+                    <i class="ri-newspaper-line mr-2"></i>
+                    MAU'S GLOBAL Newsroom
+                </span>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Article Layout -->
+    <main class="max-w-7xl mx-auto px-6 py-16">
+
+        <div class="grid lg:grid-cols-3 gap-10 items-start">
+
+            <!-- Main Article -->
+            <article class="lg:col-span-2 bg-white rounded-3xl
+                            border border-purple-100 p-7 md:p-12">
+
+                <!-- Article Image -->
+                <div class="rounded-2xl mb-10 overflow-hidden
+                            flex items-center justify-center min-h-[260px]"
+                     style="background:linear-gradient(135deg,#eee4f4,#fce5e8)">
+
+                    <i class="ri-news-line text-8xl"
+                       style="color:var(--primary)"></i>
+
+                </div>
+
+                <!-- Article Content -->
+                <div class="article-content">
+
+                    <p>
+                        Welcome to MAU'S GLOBAL News & Alerts.
+                        This page provides information about business
+                        updates, important announcements,
+                        registrations, notices and other relevant
+                        developments for readers and business owners.
+                    </p>
+
+                    <h2>Overview of This Update</h2>
+
+                    <p>
+                        Business owners, entrepreneurs and organisations
+                        should regularly stay informed about applicable
+                        regulatory announcements, official notices,
+                        procedural changes and business-related
+                        developments. Staying informed can help you
+                        understand your responsibilities and make
+                        better decisions regarding your business.
+                    </p>
+
+                    <p>
+                        Information published in this section is
+                        intended to provide general awareness.
+                        Readers should always review the original
+                        notification or announcement issued by the
+                        relevant authority before taking any action.
+                    </p>
+
+                    <h2>Important Information</h2>
+
+                    <p>
+                        Updates may cover registration procedures,
+                        documentation, taxation, business services,
+                        digital processes, compliance reminders,
+                        government announcements and other
+                        topics relevant to business activities.
+                    </p>
+
+                    <h3>Who Should Follow These Updates?</h3>
+
+                    <p>
+                        These updates may be useful for business
+                        owners, entrepreneurs, startups, organisations,
+                        professionals and individuals looking for
+                        information about registrations or business
+                        services.
+                    </p>
+
+                    <h2>What You Should Do</h2>
+
+                    <p>
+                        If an update applies to your business,
+                        carefully review the original source,
+                        verify the requirements and check any
+                        applicable dates or deadlines. When
+                        necessary, seek guidance from a qualified
+                        professional before submitting applications
+                        or making decisions.
+                    </p>
+
+                    <!-- Official Source -->
+                    <div class="rounded-2xl p-6 mt-10"
+                         style="background:var(--soft)">
+
+                        <div class="flex items-start gap-4">
+
+                            <div class="w-12 h-12 rounded-xl bg-white
+                                        flex items-center justify-center
+                                        shrink-0">
+                                <i class="ri-link text-2xl"
+                                   style="color:var(--coral)"></i>
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-bold mb-2"
+                                    style="color:var(--dark)">
+                                    Official Source & Reference
+                                </h3>
+
+                                <p class="text-sm text-gray-600 leading-7 mb-4">
+                                    Always verify the information
+                                    with the original source to
+                                    confirm its accuracy and
+                                    applicability.
+                                </p>
+
+                                <a href="https://www.india.gov.in/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="inline-flex items-center gap-2
+                                          font-bold text-sm"
+                                   style="color:var(--primary)">
+                                    Visit Official Source
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Disclaimer -->
+                    <div class="border-l-4 pl-5 mt-9"
+                         style="border-color:var(--coral)">
+
+                        <h3 class="text-base font-bold mb-2"
+                            style="color:var(--dark)">
+                            Information Disclaimer
+                        </h3>
+
+                        <p class="text-sm leading-7 mb-0">
+                            This article is intended for general
+                            informational and awareness purposes
+                            only. It is not legal, financial
+                            or professional advice. Please
+                            independently verify all information
+                            with the relevant official authority.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Article Footer -->
+                <div class="border-t border-purple-100 mt-10 pt-7
+                            flex flex-wrap justify-between items-center gap-5">
+
+                    <a href="news.html"
+                       class="font-semibold text-sm"
+                       style="color:var(--primary)">
+                        <i class="ri-arrow-left-line mr-1"></i>
+                        Back to All News
+                    </a>
+
+                    <a href="contact.html"
+                       class="main-btn text-white px-5 py-3
+                              rounded-xl text-sm font-semibold">
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Sidebar -->
+            <aside class="space-y-7">
+
+                <!-- News Info -->
+                <div class="bg-white rounded-2xl border
+                            border-purple-100 p-7">
+
+                    <h3 class="font-bold text-lg mb-6"
+                        style="color:var(--dark)">
+                        Article Information
+                    </h3>
+
+                    <div class="space-y-5 text-sm">
+
+                        <div>
+                            <p class="text-gray-400 mb-1">Category</p>
+                            <p class="font-semibold text-gray-700">
+                                Business Updates
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="text-gray-400 mb-1">Published Date</p>
+                            <p class="font-semibold text-gray-700">
+                                20 November 2026
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="text-gray-400 mb-1">Published By</p>
+                            <p class="font-semibold text-gray-700">
+                                MAU'S GLOBAL
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="text-gray-400 mb-1">Status</p>
+                            <span class="inline-block px-3 py-1 rounded-full
+                                           text-xs font-bold"
+                                  style="background:var(--soft);color:var(--coral)">
+                                NEW UPDATE
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Official Sources -->
+                <div class="bg-white rounded-2xl border
+                            border-purple-100 p-7">
+
+                    <h3 class="font-bold text-lg mb-5"
+                        style="color:var(--dark)">
+                        Official Resources
+                    </h3>
+
+                    <p class="text-gray-500 text-sm leading-7 mb-5">
+                        Refer to official portals for verified
+                        announcements, information and updates.
+                    </p>
+
+                    <div class="space-y-4">
+
+                        <a href="https://www.india.gov.in/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="flex items-center justify-between
+                                  text-sm font-semibold text-gray-600
+                                  hover:text-purple-800">
+                            India.gov.in
+                            <i class="ri-external-link-line"></i>
+                        </a>
+
+                        <a href="https://www.gst.gov.in/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="flex items-center justify-between
+                                  text-sm font-semibold text-gray-600
+                                  hover:text-purple-800">
+                            GST Portal
+                            <i class="ri-external-link-line"></i>
+                        </a>
+
+                        <a href="https://www.incometax.gov.in/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="flex items-center justify-between
+                                  text-sm font-semibold text-gray-600
+                                  hover:text-purple-800">
+                            Income Tax Portal
+                            <i class="ri-external-link-line"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Related News -->
+                <div class="bg-white rounded-2xl border
+                            border-purple-100 p-7">
+
+                    <h3 class="font-bold text-lg mb-6"
+                        style="color:var(--dark)">
+                        Related News
+                    </h3>
+
+                    <div class="space-y-5">
+
+                        <a href="news-article.html"
+                           class="block border-b border-purple-50 pb-5">
+
+                            <span class="text-xs font-bold"
+                                  style="color:var(--coral)">
+                                REGISTRATION
+                            </span>
+
+                            <h4 class="font-semibold text-sm mt-2
+                                       text-gray-700 leading-6">
+                                Registration & Documentation Updates
+                            </h4>
+
+                            <p class="text-xs text-gray-400 mt-2">
+                                Read Article
+                                <i class="ri-arrow-right-line"></i>
+                            </p>
+
+                        </a>
+
+                        <a href="news-article.html"
+                           class="block border-b border-purple-50 pb-5">
+
+                            <span class="text-xs font-bold"
+                                  style="color:var(--coral)">
+                                BUSINESS
+                            </span>
+
+                            <h4 class="font-semibold text-sm mt-2
+                                       text-gray-700 leading-6">
+                                Business Opportunities & Information
+                            </h4>
+
+                            <p class="text-xs text-gray-400 mt-2">
+                                Read Article
+                                <i class="ri-arrow-right-line"></i>
+                            </p>
+
+                        </a>
+
+                        <a href="news-article.html"
+                           class="block">
+
+                            <span class="text-xs font-bold"
+                                  style="color:var(--coral)">
+                                ALERT
+                            </span>
+
+                            <h4 class="font-semibold text-sm mt-2
+                                       text-gray-700 leading-6">
+                                Important Compliance Reminders
+                            </h4>
+
+                            <p class="text-xs text-gray-400 mt-2">
+                                Read Article
+                                <i class="ri-arrow-right-line"></i>
+                            </p>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Contact Card -->
+                <div class="hero-bg rounded-2xl p-7 text-white">
+
+                    <i class="ri-customer-service-2-line text-3xl
+                               text-pink-200"></i>
+
+                    <h3 class="text-xl font-bold mt-4 mb-3">
+                        Need Assistance?
+                    </h3>
+
+                    <p class="text-sm text-purple-100 leading-7 mb-6">
+                        Have questions about our business services
+                        or a published update? Contact our team.
+                    </p>
+
+                    <a href="contact.html"
+                       class="inline-block bg-white px-5 py-3
+                              rounded-xl text-sm font-bold"
+                       style="color:var(--primary)">
+                        Contact Support
+                        <i class="ri-arrow-right-line ml-1"></i>
+                    </a>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- CTA -->
+    <section class="px-6 pb-20">
+
+        <div class="max-w-7xl mx-auto rounded-3xl p-9 md:p-12
+                    text-center"
+             style="background:var(--soft)">
+
+            <h2 class="text-3xl font-bold mb-4"
+                style="color:var(--dark)">
+                Stay Updated With MAU'S GLOBAL
+            </h2>
+
+            <p class="text-gray-500 max-w-2xl mx-auto
+                      text-sm leading-7 mb-7">
+                Visit our news section regularly for new
+                announcements, business information
+                and important updates.
+            </p>
+
+            <a href="news.html"
+               class="main-btn inline-block text-white px-7 py-4
+                      rounded-xl font-semibold">
+                View All News
+                <i class="ri-arrow-right-line ml-2"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+  <!-- FOOTER -->
+<footer class="bg-dark text-white">
+
+<div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3 lg:px-8">
+
+<div>
+<img src="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png" alt="MAU'S GLOBAL Logo" class="h-12 w-auto rounded-lg bg-white p-1">
+
+<p class="mt-5 max-w-sm leading-relaxed text-white/75">
+We provide marketing, branding and technology solutions, including digital marketing, software development and IT consultancy.
+</p>
+</div>
+
+<div>
+<h3 class="text-xl font-bold">Contact Information</h3>
+
+<div class="mt-5 space-y-4 text-white/80">
+
+<p>
+<i class="ri-phone-line mr-2 text-accent"></i>
+<a href="tel:+919119480496">+91 9119480496</a>
+</p>
+
+<p>
+<i class="ri-mail-line mr-2 text-accent"></i>
+<a href="mailto:mausglobalprivatelimited@gmail.com" class="break-all">mausglobalprivatelimited@gmail.com</a>
+</p>
+
+<p>
+<i class="ri-map-pin-line mr-2 text-accent"></i>
+L-1, Matoshree Nagar, Garkheda, Chhatrapati Sambhajinagar, Maharashtra 431001, India
+</p>
+
+</div>
+</div>
+
+<div>
+<h3 class="text-xl font-bold">Quick Links</h3>
+
+<div class="mt-5 grid grid-cols-2 gap-3 text-white/80">
+<a href="index.html" class="hover:text-accent">Home</a>
+<a href="about.html" class="hover:text-accent">About Us</a>
+<a href="services.html" class="hover:text-accent">Services</a>
+<a href="plans.html" class="hover:text-accent">Plans</a>
+<a href="contact.html" class="hover:text-accent">Contact Us</a>
+<a href="login.html" class="hover:text-accent">Login</a>
+<a href="leagal-page.html" class="hover:text-accent">Privacy Policy</a>
+<a href="leagal-page.html" class="hover:text-accent">Terms & Conditions</a>
+<a href="leagal-page.html" class="hover:text-accent">Refund Policy</a>
+<a href="leagal-page.html" class="hover:text-accent">Grievance</a>
+<a href="otp-verification.html" class="hover:text-accent">otp verification page</a>
+<a href="404.html" class="hover:text-accent">Error 404 page</a>
+<a href="500.html" class="hover:text-accent">500 error page</a>
+<a href="maintenance.html" class="hover:text-accent">mentainance page</a>
+<a href="franchise.html" class="hover:text-accent">franchaise</a>
+<a href="search-result.html" class="hover:text-accent">search-result</a>
+<a href="session-expire.html" class="hover:text-accent">session expire page</a>
+<a href="business-service.html" class="hover:text-accent">business-service page</a>
+<a href="news.html" class="hover:text-accent">news & Allerts</a>
+<a href="news-article.html" class="hover:text-accent">Articles</a>
+</div>
+
+</div>
+
+</div>
+
+<div class="border-t border-white/15 py-5 text-center text-sm text-white/65">
+<p>© 2026 MAU'S GLOBAL. All Rights Reserved.</p>
+<p class="mt-1">Developed By :- Versatile Technology</p>
+</div>
+
+</footer>
+
+</body>
+</html>

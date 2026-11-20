@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stay informed with the latest business news, updates, announcements, alerts and important information from MAU'S GLOBAL.">
+    <meta name="robots" content="index, follow">
+    <title>News & Alerts | MAU'S GLOBAL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+	<link rel="icon" href="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+<script>
+	tailwind.config = {
+	theme: { extend: {
+    colors: { brand: "#5B1A7A", dark: "#3B0F52", accent: "#FF6B57", accent_ink: "#2B0A05",
+              soft: "#FFF1F3", ink: "#24102E", line: "#F6D5DD" },
+    fontFamily: { head: ['"Sora"', 'Hind', 'sans-serif'], sans: ['Hind', '"Noto Sans Devanagari"', 'system-ui', 'sans-serif'] }
+  } }
+};
+</script>
+    <style>
+        :root {
+            --primary: #5B1A7A;
+            --dark: #3B0F52;
+            --coral: #FF6B57;
+            --soft: #FFF1F3;
+            --bg: #FAF7FC;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--bg);
+            font-family: Arial, sans-serif;
+        }
+
+        .main-btn {
+            background: var(--primary);
+            transition: .3s;
+        }
+
+        .main-btn:hover {
+            background: var(--dark);
+            transform: translateY(-2px);
+        }
+
+        .news-card {
+            transition: .3s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(59,15,82,.08);
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg,#5B1A7A,#3B0F52);
+        }
+
+        .news-image {
+            background: linear-gradient(135deg,#eee4f4,#fce5e8);
+        }
+    </style>
+</head>
+
+<body>
+
+     <header class="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur" id="home">
+
+  <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+
+    <a href="index.html" class="flex items-center gap-2" aria-label="MAU'S GLOBAL home">
+      <img
+        src="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png"
+        alt="MAU'S GLOBAL logo"
+        width="160"
+        height="48"
+        class="h-10 w-auto sm:h-12">
+    </a>
+
+    <nav class="hidden items-center gap-1 lg:flex" aria-label="Primary">
+      <a href="services.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Services</a>
+      <a href="contact.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Contact Us</a>
+      <a href="about.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">About Us</a>
+      <a href="apply-hear.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Apply Here</a>
+      <a href="plans.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-ink/80 hover:text-brand hover:bg-soft transition-colors">Plans</a>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <a href="tel:+919119480496" class="hidden xl:flex flex-col text-right leading-tight text-sm font-semibold text-brand hover:text-dark">
+        <span class="text-[11px] font-medium text-ink/60">Helpline</span>
+        +91-9119480496
+      </a>
+
+      <a href="login.html" class="rounded-2xl bg-accent px-4 py-2 text-sm font-bold text-accent_ink hover:brightness-95 transition">
+        Login
+      </a>
+
+      <button id="menu-btn" type="button"
+        class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-line text-brand lg:hidden"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Toggle menu">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="hidden border-t border-line bg-white px-4 pb-4 lg:hidden">
+    <nav aria-label="Mobile">
+      <a href="services.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Services</a>
+      <a href="contact.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Contact Us</a>
+      <a href="about.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">About Us</a>
+      <a href="apply-hear.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Apply Here</a>
+      <a href="plans.html" class="block px-4 py-3 rounded-lg font-semibold text-ink hover:bg-soft">Plans</a>
+
+      <a href="tel:+919119480496" class="mt-2 block rounded-lg bg-soft px-4 py-3 font-semibold text-brand">
+        Helpline +91-9119480496
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+    <!-- Hero Section -->
+    <section class="hero-bg px-6 py-20 md:py-24">
+
+        <div class="max-w-7xl mx-auto text-center">
+
+            <span class="inline-flex items-center gap-2 bg-white/10
+                         text-pink-200 px-4 py-2 rounded-full
+                         text-xs font-bold tracking-widest uppercase mb-6">
+                <i class="ri-notification-3-line"></i>
+                News & Updates
+            </span>
+
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                Stay Updated.
+                <span style="color:#FF9A89">Stay Informed.</span>
+            </h1>
+
+            <p class="text-purple-100 max-w-2xl mx-auto leading-8 text-sm md:text-base">
+                Discover important announcements, business updates,
+                alerts, latest news and useful information
+                relevant to your business journey.
+            </p>
+
+            <a href="#latest-news"
+               class="inline-block mt-9 bg-white px-7 py-4 rounded-xl
+                      font-bold hover:bg-pink-50 transition"
+               style="color:var(--primary)">
+                Explore Latest News
+                <i class="ri-arrow-down-line ml-2"></i>
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- Featured News -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+
+        <div class="flex items-center gap-3 mb-8">
+            <span class="w-2 h-8 rounded-full"
+                  style="background:var(--coral)"></span>
+
+            <h2 class="text-2xl font-bold"
+                style="color:var(--dark)">
+                Featured Update
+            </h2>
+        </div>
+
+        <div class="bg-white border border-purple-100 rounded-3xl
+                    overflow-hidden grid lg:grid-cols-2">
+
+            <div class="news-image min-h-[280px] md:min-h-[400px]
+                        flex items-center justify-center">
+
+                <i class="ri-newspaper-line text-8xl"
+                   style="color:var(--primary)"></i>
+
+            </div>
+
+            <div class="p-8 md:p-12 flex flex-col justify-center">
+
+                <div class="flex flex-wrap gap-2 mb-5">
+
+                    <span class="text-xs font-bold px-3 py-1 rounded-full
+                                 text-white"
+                          style="background:var(--primary)">
+                        FEATURED
+                    </span>
+
+                    <span class="text-xs font-bold px-3 py-1 rounded-full"
+                          style="background:var(--soft);color:var(--coral)">
+                        TODAY
+                    </span>
+
+                </div>
+
+                <p class="text-sm text-gray-400 mb-3">
+                    Business Updates & Announcements
+                </p>
+
+                <h3 class="text-2xl md:text-3xl font-bold mb-5"
+                    style="color:var(--dark)">
+                    Latest Business News and Important Announcements
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-7 mb-7">
+                    Stay connected with the latest updates,
+                    announcements and information. Check this section
+                    regularly for important news and notifications
+                    from reliable sources.
+                </p>
+
+                <a href="news-article.html"
+                   class="main-btn text-white px-6 py-3 rounded-xl
+                          inline-flex items-center gap-2 w-fit font-semibold">
+                    Read Full Article
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Latest News -->
+    <section id="latest-news" class="max-w-7xl mx-auto px-6 pb-20">
+
+        <div class="flex flex-col md:flex-row justify-between
+                    md:items-end gap-5 mb-10">
+
+            <div>
+                <span class="text-xs font-bold uppercase tracking-widest"
+                      style="color:var(--coral)">
+                    Newsroom
+                </span>
+
+                <h2 class="text-3xl font-bold mt-3"
+                    style="color:var(--dark)">
+                    Latest News & Alerts
+                </h2>
+
+                <p class="text-gray-500 text-sm mt-3">
+                    Important news, announcements and business updates.
+                </p>
+            </div>
+
+            <div class="flex gap-2 flex-wrap">
+                <span class="px-4 py-2 rounded-full text-xs font-bold
+                             bg-white border border-purple-100"
+                      style="color:var(--primary)">
+                    All Updates
+                </span>
+
+                <span class="px-4 py-2 rounded-full text-xs font-bold
+                             text-gray-500 bg-white border border-purple-100">
+                    Business
+                </span>
+
+                <span class="px-4 py-2 rounded-full text-xs font-bold
+                             text-gray-500 bg-white border border-purple-100">
+                    Government
+                </span>
+            </div>
+
+        </div>
+
+
+        <!-- News Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+
+
+            <!-- News 1 -->
+            <article class="news-card bg-white rounded-2xl
+                            border border-purple-100 overflow-hidden">
+
+                <div class="news-image h-52 flex items-center justify-center">
+                    <i class="ri-government-line text-6xl"
+                       style="color:var(--primary)"></i>
+                </div>
+
+                <div class="p-6">
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs font-bold px-3 py-1 rounded-full
+                                     text-white"
+                              style="background:var(--coral)">
+                            NEW
+                        </span>
+
+                        <span class="text-xs font-bold px-3 py-1 rounded-full
+                                     bg-purple-50 text-purple-800">
+                            Government Update
+                        </span>
+                    </div>
+
+                    <p class="text-xs text-gray-400 mb-3">
+                        20 November 2026
+                    </p>
+
+                    <h3 class="text-xl font-bold mb-3"
+                        style="color:var(--dark)">
+                        Important Government & Business Notifications
+                    </h3>
+
+                    <p class="text-gray-500 text-sm leading-7 mb-5">
+                        Stay aware of official notifications and
+                        announcements that may affect businesses,
+                        registrations and compliance requirements.
+                    </p>
+
+                    <a href="news-article.html"
+                       class="font-bold text-sm"
+                       style="color:var(--primary)">
+                        Read More
+                        <i class="ri-arrow-right-line ml-1"></i>
+                    </a>
+
+                </div>
+            </article>
+
+
+            <!-- News 2 -->
+            <article class="news-card bg-white rounded-2xl
+                            border border-purple-100 overflow-hidden">
+
+                <div class="news-image h-52 flex items-center justify-center">
+                    <i class="ri-file-list-3-line text-6xl"
+                       style="color:var(--primary)"></i>
+                </div>
+
+                <div class="p-6">
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs font-bold px-3 py-1 rounded-full
+                                     text-white"
+                              style="background:var(--primary)">
+                            TODAY
+                        </span>
+
+                        <span class="text-xs font-bold px-3 py-1 rounded-full
+                                     bg-purple-50 text-purple-800">
+                            Registration
+                        </span>
+                    </div>
+
+                    <p class="text-xs text-gray-400 mb-3">
+                        Latest Update
+                    </p>
+
+                    <h3 class="text-xl font-bold mb-3"
+                        style="color:var(--dark)">
+                        Registration and Documentation Updates
+                    </h3>
+
+                    <p class="text-gray-500 text-sm leading-7 mb-5">
+                        Check important information regarding
+                        registrations, documents, application
+                        procedures and business-related processes.
+                    </p>
+
+                    <a href="news-article.html"
+                       class="font-bold text-sm"
+                       style="color:var(--primary)">
+                        Read More
+                        <i class="ri-arrow-right-line ml-1"></i>
+                    </a>
+
+                </div>
+            </article>
+
+
+            <!-- News 3 -->
+            <article class="news-card bg-white rounded-2xl
+                            border border-purple-100 overflow-hidden">
+
+                <div class="news-image h-52 flex items-center justify-center">
+                    <i class="ri-shield-check-line text-6xl"
+                       style="color:var(--primary)"></i>
+                </div>
+
+                <div class="p-6">
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs font-bold px-3 py-1 rounded-full
+                                     text-white"
+                              style="background:var(--coral)">
+                            NEW
+                        </span>
+
+                        <span class="text-xs font-bold px-3 py-1 rounded-full
+                                     bg-purple-50 text-purple-800">
+                            Compliance Alert
+                        </span>
+                    </div>
+
+                    <p class="text-xs text-gray-400 mb-3">
+                        Important Alert
+                    </p>
+
+                    <h3 class="text-xl font-bold mb-3"
+                        style="color:var(--dark)">
+                        Compliance Reminders for Businesses
+                    </h3>
+
+                    <p class="text-gray-500 text-sm leading-7 mb-5">
+                        Review official compliance reminders,
+                        filing information and important business
+                        responsibilities.
+                    </p>
+
+                    <a href="news-article.html"
+                       class="font-bold text-sm"
+                       style="color:var(--primary)">
+                        Read More
+                        <i class="ri-arrow-right-line ml-1"></i>
+                    </a>
+
+                </div>
+            </article>
+
+
+            <!-- News 4 -->
+            <article class="news-card bg-white rounded-2xl
+                            border border-purple-100 overflow-hidden">
+
+                <div class="news-image h-52 flex items-center justify-center">
+                    <i class="ri-bank-line text-6xl"
+                       style="color:var(--primary)"></i>
+                </div>
+
+                <div class="p-6">
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs font-bold px-3 py-1 rounded-full
+                                     bg-purple-50 text-purple-800">
+                            Finance
+                        </span>
+                    </div>
+
+                    <p class="text-xs text-gray-400 mb-3">
+                        Business News
+                    </p>
+
+                    <h3 class="text-xl font-bold mb-3"
+                        style="color:var(--dark)">
+                        Financial and Business Sector Updates
+                    </h3>
+
+                    <p class="text-gray-500 text-sm leading-7 mb-5">
+                        Follow important financial announcements
+                        and updates relevant to entrepreneurs
+                        and business owners.
+                    </p>
+
+                    <a href="news-article.html"
+                       class="font-bold text-sm"
+                       style="color:var(--primary)">
+                        Read More
+                        <i class="ri-arrow-right-line ml-1"></i>
+                    </a>
+
+                </div>
+            </article>
+
+
+            <!-- News 5 -->
+            <article class="news-card bg-white rounded-2xl
+                            border border-purple-100 overflow-hidden">
+
+                <div class="news-image h-52 flex items-center justify-center">
+                    <i class="ri-lightbulb-flash-line text-6xl"
+                       style="color:var(--primary)"></i>
+                </div>
+
+                <div class="p-6">
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs font-bold px-3 py-1 rounded-full
+                                     bg-purple-50 text-purple-800">
+                            Business
+                        </span>
+                    </div>
+
+                    <p class="text-xs text-gray-400 mb-3">
+                        Business Information
+                    </p>
+
+                    <h3 class="text-xl font-bold mb-3"
+                        style="color:var(--dark)">
+                        Business Opportunities and Helpful Information
+                    </h3>
+
+                    <p class="text-gray-500 text-sm leading-7 mb-5">
+                        Explore helpful information, opportunities
+                        and resources for starting and managing
+                        your business.
+                    </p>
+
+                    <a href="news-article.html"
+                       class="font-bold text-sm"
+                       style="color:var(--primary)">
+                        Read More
+                        <i class="ri-arrow-right-line ml-1"></i>
+                    </a>
+
+                </div>
+            </article>
+
+
+            <!-- News 6 -->
+            <article class="news-card bg-white rounded-2xl
+                            border border-purple-100 overflow-hidden">
+
+                <div class="news-image h-52 flex items-center justify-center">
+                    <i class="ri-notification-4-line text-6xl"
+                       style="color:var(--primary)"></i>
+                </div>
+
+                <div class="p-6">
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs font-bold px-3 py-1 rounded-full
+                                     text-white"
+                              style="background:var(--coral)">
+                            NEW
+                        </span>
+
+                        <span class="text-xs font-bold px-3 py-1 rounded-full
+                                     bg-purple-50 text-purple-800">
+                            Announcement
+                        </span>
+                    </div>
+
+                    <p class="text-xs text-gray-400 mb-3">
+                        Latest Announcement
+                    </p>
+
+                    <h3 class="text-xl font-bold mb-3"
+                        style="color:var(--dark)">
+                        MAU'S GLOBAL News & Platform Announcements
+                    </h3>
+
+                    <p class="text-gray-500 text-sm leading-7 mb-5">
+                        Find platform announcements, service
+                        updates, important notices and new
+                        information from MAU'S GLOBAL.
+                    </p>
+
+                    <a href="news-article.html"
+                       class="font-bold text-sm"
+                       style="color:var(--primary)">
+                        Read More
+                        <i class="ri-arrow-right-line ml-1"></i>
+                    </a>
+
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- News Source Information -->
+    <section class="max-w-7xl mx-auto px-6 pb-20">
+
+        <div class="rounded-3xl p-8 md:p-12
+                    flex flex-col md:flex-row gap-8
+                    items-center justify-between"
+             style="background:var(--soft)">
+
+            <div class="max-w-2xl">
+
+                <h2 class="text-2xl font-bold mb-4"
+                    style="color:var(--dark)">
+                    Stay Connected With Reliable Information
+                </h2>
+
+                <p class="text-gray-600 text-sm leading-7">
+                    We encourage readers to refer to official
+                    government portals and verified sources for
+                    the latest information, notifications and
+                    regulatory updates.
+                </p>
+
+            </div>
+
+            <a href="#"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="main-btn text-white px-7 py-4 rounded-xl
+                      font-semibold whitespace-nowrap">
+                Official Information
+                <i class="ri-external-link-line ml-2"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="px-6 pb-20">
+
+        <div class="hero-bg max-w-7xl mx-auto rounded-3xl
+                    text-center p-9 md:p-14">
+
+            <i class="ri-question-answer-line text-4xl text-pink-200"></i>
+
+            <h2 class="text-3xl md:text-4xl font-bold text-white mt-5 mb-5">
+                Have Questions About an Update?
+            </h2>
+
+            <p class="text-purple-100 max-w-2xl mx-auto text-sm leading-7 mb-8">
+                Contact our team for information about our services
+                or assistance with your business-related enquiries.
+            </p>
+
+            <a href="contact.html"
+               class="inline-block bg-white px-8 py-4 rounded-xl
+                      font-bold hover:bg-pink-50"
+               style="color:var(--primary)">
+                Contact Our Team
+                <i class="ri-arrow-right-line ml-2"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+   <!-- FOOTER -->
+<footer class="bg-dark text-white">
+
+<div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3 lg:px-8">
+
+<div>
+<img src="https://aghori2134.github.io/Mau-s-Global-Redesigned-Index-page/images/logo.png" alt="MAU'S GLOBAL Logo" class="h-12 w-auto rounded-lg bg-white p-1">
+
+<p class="mt-5 max-w-sm leading-relaxed text-white/75">
+We provide marketing, branding and technology solutions, including digital marketing, software development and IT consultancy.
+</p>
+</div>
+
+<div>
+<h3 class="text-xl font-bold">Contact Information</h3>
+
+<div class="mt-5 space-y-4 text-white/80">
+
+<p>
+<i class="ri-phone-line mr-2 text-accent"></i>
+<a href="tel:+919119480496">+91 9119480496</a>
+</p>
+
+<p>
+<i class="ri-mail-line mr-2 text-accent"></i>
+<a href="mailto:mausglobalprivatelimited@gmail.com" class="break-all">mausglobalprivatelimited@gmail.com</a>
+</p>
+
+<p>
+<i class="ri-map-pin-line mr-2 text-accent"></i>
+L-1, Matoshree Nagar, Garkheda, Chhatrapati Sambhajinagar, Maharashtra 431001, India
+</p>
+
+</div>
+</div>
+
+<div>
+<h3 class="text-xl font-bold">Quick Links</h3>
+
+<div class="mt-5 grid grid-cols-2 gap-3 text-white/80">
+<a href="index.html" class="hover:text-accent">Home</a>
+<a href="about.html" class="hover:text-accent">About Us</a>
+<a href="services.html" class="hover:text-accent">Services</a>
+<a href="plans.html" class="hover:text-accent">Plans</a>
+<a href="contact.html" class="hover:text-accent">Contact Us</a>
+<a href="login.html" class="hover:text-accent">Login</a>
+<a href="leagal-page.html" class="hover:text-accent">Privacy Policy</a>
+<a href="leagal-page.html" class="hover:text-accent">Terms & Conditions</a>
+<a href="leagal-page.html" class="hover:text-accent">Refund Policy</a>
+<a href="leagal-page.html" class="hover:text-accent">Grievance</a>
+<a href="otp-verification.html" class="hover:text-accent">otp verification page</a>
+<a href="404.html" class="hover:text-accent">Error 404 page</a>
+<a href="500.html" class="hover:text-accent">500 error page</a>
+<a href="maintenance.html" class="hover:text-accent">mentainance page</a>
+<a href="franchise.html" class="hover:text-accent">franchaise</a>
+<a href="search-result.html" class="hover:text-accent">search-result</a>
+<a href="session-expire.html" class="hover:text-accent">session expire page</a>
+<a href="business-service.html" class="hover:text-accent">business-service page</a>
+<a href="news.html" class="hover:text-accent">news & Allerts</a>
+<a href="news-article.html" class="hover:text-accent">Articles</a>
+</div>
+
+</div>
+
+</div>
+
+<div class="border-t border-white/15 py-5 text-center text-sm text-white/65">
+<p>© 2026 MAU'S GLOBAL. All Rights Reserved.</p>
+<p class="mt-1">Developed By :- Versatile Technology</p>
+</div>
+
+</footer>
+
+</body>
+</html>
